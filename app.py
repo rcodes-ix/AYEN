@@ -1,11 +1,24 @@
-"""AYEN — Supply Chain Signals | Streamlit MVP."""
+"""AYEN — Supply Chain Signals | Manufacturer-aware Streamlit MVP."""
 from pathlib import Path
 import json
 import joblib
-import numpy as np
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+
+from manufacturer_models import (
+    FEATURES as MANUFACTURER_FEATURES,
+    REQUIRED_COLUMNS as MANUFACTURER_REQUIRED_COLUMNS,
+    display_manufacturer_name,
+    list_manufacturers,
+    list_trained_manufacturers,
+    load_history,
+    load_manufacturer_metrics,
+    load_manufacturer_model,
+    save_history,
+    train_manufacturer_model,
+    validate_history,
+)
 
 ROOT = Path(__file__).resolve().parent
 DATA_PATH = ROOT / "data" / "ayen_synthetic_shipments.csv"
@@ -15,10 +28,10 @@ METRICS_PATH = ROOT / "models" / "model_metrics.json"
 NUMERIC_FEATURES = [
     "order_quantity", "planned_lead_time_days", "supplier_reliability",
     "port_congestion", "weather_severity", "customs_delay_risk",
-    "inventory_days", "historical_delay_rate", "shipment_cost"
+    "inventory_days", "historical_delay_rate", "shipment_cost",
 ]
 CATEGORICAL_FEATURES = [
-    "supplier_country", "transport_mode", "product_category", "criticality"
+    "supplier_country", "transport_mode", "product_category", "criticality",
 ]
 FEATURES = NUMERIC_FEATURES + CATEGORICAL_FEATURES
 REQUIRED_UPLOAD_COLUMNS = FEATURES + ["is_delayed"]
@@ -27,7 +40,7 @@ st.set_page_config(
     page_title="AYEN | Supply Chain Signals",
     page_icon="◆",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
 )
 
 st.markdown("""
@@ -64,6 +77,7 @@ hr { border-color:#26334d; }
 </style>
 """, unsafe_allow_html=True)
 
+
 def load_data():
     if DATA_PATH.exists():
         try:
@@ -72,11 +86,16 @@ def load_data():
             return pd.DataFrame()
     return pd.DataFrame()
 
+
 @st.cache_resource
 def load_model():
     if MODEL_PATH.exists():
-        return joblib.load(MODEL_PATH)
+        try:
+            return joblib.load(MODEL_PATH)
+        except Exception:
+            return None
     return None
+
 
 def load_metrics():
     if METRICS_PATH.exists():
@@ -86,8 +105,6 @@ def load_metrics():
             return {}
     return {}
 
-def money(value):
-    return f"{value:,.0f}"
 
 def risk_band(probability):
     if probability >= .70:
@@ -95,6 +112,7 @@ def risk_band(probability):
     if probability >= .40:
         return "MEDIUM", "Moderate disruption risk"
     return "LOW", "Lower disruption risk"
+
 
 def recommendations(row, probability):
     actions = []
@@ -128,22 +146,66 @@ def recommendations(row, probability):
     actions.append(("Cost control", "Compare the expected cost of expediting or backup sourcing with the operational cost of a stockout before approving extra spend."))
     return actions
 
-def make_chart(df, x, title, color=None):
-    if df.empty or x not in df.columns:
+
+def make_chart(dataframe, column, title, color=None):
+    if dataframe is None or dataframe.empty or column not in dataframe.columns:
         st.info("Not enough data to display this chart yet.")
         return
-    if color and color in df.columns:
-        fig = px.histogram(df, x=x, color=color, barmode="group", title=title)
+    if color and color in dataframe.columns:
+        fig = px.histogram(dataframe, x=column, color=color, barmode="group", title=title)
     else:
-        fig = px.histogram(df, x=x, title=title)
+        fig = px.histogram(dataframe, x=column, title=title)
     fig.update_layout(
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
-        font_color="#dce6fa", title_font_size=15, margin=dict(l=10,r=10,t=48,b=10),
-        legend_title_text=""
+        font_color="#dce6fa", title_font_size=15, margin=dict(l=10, r=10, t=48, b=10),
+        legend_title_text="",
     )
     fig.update_xaxes(gridcolor="#25334b")
     fig.update_yaxes(gridcolor="#25334b")
     st.plotly_chart(fig, use_container_width=True)
+
+
+def choose_data_source(general_data, key):
+    """Render a source selector and return (dataframe, source label, is_general)."""
+    manufacturer_slugs = list_manufacturers()
+    options = ["__general__"] + manufacturer_slugs
+    selected = st.selectbox(
+        "Data source",
+        options,
+        key=key,
+        format_func=lambda value: (
+            "General AYEN dataset" if value == "__general__"
+            else display_manufacturer_name(value)
+        ),
+    )
+    if selected == "__general__":
+        return general_data, "General AYEN dataset", True
+    history = load_history(selected)
+    if history is None:
+        st.error("This manufacturer's saved history could not be loaded.")
+        return pd.DataFrame(), display_manufacturer_name(selected), False
+    return history, display_manufacturer_name(selected), False
+
+
+def show_model_metrics(metrics, title, baseline=False):
+    if not metrics:
+        st.info("No evaluation metrics are available for this model yet.")
+        return
+    st.markdown(f"### {title}")
+    cols = st.columns(5)
+    for col, key, label in zip(
+        cols,
+        ["accuracy", "precision", "recall", "f1", "roc_auc"],
+        ["Accuracy", "Precision", "Recall", "F1 score", "ROC-AUC"],
+    ):
+        value = metrics.get(key)
+        col.metric(label, f"{value:.3f}" if isinstance(value, (int, float)) else "N/A")
+    st.caption(
+        f"Evaluation records: {metrics.get('test_rows', 'N/A')}. "
+        + ("These results use synthetic baseline data." if baseline else "These results use a held-out split of uploaded historical data.")
+        + " Metrics do not guarantee future performance."
+    )
+
 
 df = load_data()
 model = load_model()
@@ -156,13 +218,13 @@ with st.sidebar:
     page = st.radio(
         "WORKSPACE",
         ["Overview", "New assessment", "Shipment explorer", "Data import", "Model transparency"],
-        label_visibility="visible"
+        label_visibility="visible",
     )
     st.markdown("---")
     st.markdown('<span class="pill">MVP</span><span class="pill">Decision support</span>', unsafe_allow_html=True)
     st.caption("Predictions are estimates, not guarantees. Verify with current supplier and logistics information.")
     if model is None:
-        st.error("Model not found. Run the training steps in the setup instructions.")
+        st.warning("Baseline model not found. Run `python train_model.py` after generating the baseline dataset.")
     else:
         st.success("Baseline model loaded")
 
@@ -175,47 +237,97 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+
 if page == "Overview":
-    if df.empty:
-        st.warning("The sample dataset is missing. Run `python generate_data.py` from the AYEN project folder.")
+    st.markdown("## Supply-chain overview")
+    st.write("Choose whether to view the general demo dataset or one manufacturer's saved historical shipment records.")
+    selected_df, source_label, is_general = choose_data_source(df, "overview_data_source")
+    if selected_df.empty:
+        if is_general:
+            st.warning("The baseline dataset is missing. Run `python generate_data.py`.")
+        else:
+            st.info("This manufacturer has no readable saved history yet. Upload records in Data import.")
     else:
-        total = len(df)
-        delay_rate = float(df["is_delayed"].mean()) if "is_delayed" in df else 0
-        avg_lead = float(df["actual_lead_time_days"].mean()) if "actual_lead_time_days" in df else 0
-        high_critical = int(df["criticality"].isin(["High", "Critical"]).sum()) if "criticality" in df else 0
+        total = len(selected_df)
+        delay_rate = float(pd.to_numeric(selected_df["is_delayed"], errors="coerce").mean()) if "is_delayed" in selected_df else 0.0
+        avg_planned = float(pd.to_numeric(selected_df["planned_lead_time_days"], errors="coerce").mean()) if "planned_lead_time_days" in selected_df else 0.0
+        high_critical = int(selected_df["criticality"].isin(["High", "Critical"]).sum()) if "criticality" in selected_df else 0
         c1, c2, c3, c4 = st.columns(4)
         with c1:
-            st.markdown(f'<div class="metric"><div class="metric-label">Sample shipments</div><div class="metric-value">{total:,}</div><div class="metric-foot">Synthetic demonstration records</div></div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="metric"><div class="metric-label">Shipment records</div><div class="metric-value">{total:,}</div><div class="metric-foot">{source_label}</div></div>', unsafe_allow_html=True)
         with c2:
-            st.markdown(f'<div class="metric"><div class="metric-label">Observed delay rate</div><div class="metric-value">{delay_rate:.1%}</div><div class="metric-foot">Within this synthetic dataset only</div></div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="metric"><div class="metric-label">Observed delay rate</div><div class="metric-value">{delay_rate:.1%}</div><div class="metric-foot">Historical labels in selected data</div></div>', unsafe_allow_html=True)
         with c3:
-            st.markdown(f'<div class="metric"><div class="metric-label">Mean actual lead time</div><div class="metric-value">{avg_lead:.1f} d</div><div class="metric-foot">Historical simulated outcome</div></div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="metric"><div class="metric-label">Mean planned lead time</div><div class="metric-value">{avg_planned:.1f} d</div><div class="metric-foot">Planned duration, not actual ETA</div></div>', unsafe_allow_html=True)
         with c4:
             st.markdown(f'<div class="metric"><div class="metric-label">High-criticality records</div><div class="metric-value">{high_critical:,}</div><div class="metric-foot">Marked High or Critical</div></div>', unsafe_allow_html=True)
         st.markdown("### Risk landscape")
         left, right = st.columns(2)
         with left:
-            make_chart(df, "transport_mode", "Shipments by transport mode", "is_delayed")
+            make_chart(selected_df, "transport_mode", "Shipments by transport mode", "is_delayed")
         with right:
-            make_chart(df, "product_category", "Shipments by input category", "is_delayed")
-        st.markdown("### Recent sample records")
-        display_cols = [c for c in ["shipment_id", "supplier_country", "transport_mode", "product_category", "planned_lead_time_days", "inventory_days", "criticality", "is_delayed"] if c in df]
-        st.dataframe(df[display_cols].head(12), use_container_width=True, hide_index=True)
-        st.caption("All figures on this overview are derived from AYEN's generated synthetic dataset, not real company or national supply-chain records.")
+            make_chart(selected_df, "product_category", "Shipments by input category", "is_delayed")
+        st.markdown("### Recent records")
+        display_cols = [c for c in ["shipment_id", "supplier_id", "supplier_country", "transport_mode", "product_category", "planned_lead_time_days", "inventory_days", "criticality", "is_delayed"] if c in selected_df.columns]
+        st.dataframe(selected_df[display_cols].head(12), use_container_width=True, hide_index=True)
+        if is_general:
+            st.caption("General data is synthetic demonstration data, not real Ethiopian supply-chain records.")
+        else:
+            st.caption("These summaries describe the selected manufacturer's saved history. They are not predictions.")
+
 
 elif page == "New assessment":
     st.markdown("## Assess a shipment")
-    st.write("Enter the information available before the shipment arrives. AYEN estimates delay probability and turns risk signals into a practical checklist.")
-    if model is None:
-        st.error("The trained model is missing. Run `python train_model.py` after generating the dataset.")
+    st.write("Choose the model first, then enter the information available before the shipment arrives.")
+    model_type = st.radio(
+        "Prediction model", ["General AYEN Model", "Manufacturer-Specific Model"],
+        horizontal=True, key="assessment_model_type",
+    )
+    selected_model = None
+    selected_model_name = None
+    selected_metrics = {}
+    model_ready = False
+
+    if model_type == "General AYEN Model":
+        if model is not None:
+            selected_model = model
+            selected_model_name = "General AYEN Model"
+            selected_metrics = metrics
+            model_ready = True
+            st.success("The general baseline model will be used.")
+        else:
+            st.error("The general model is unavailable. Generate the baseline data and run `python train_model.py`.")
     else:
+        trained_slugs = list_trained_manufacturers()
+        if not trained_slugs:
+            st.warning("No trained manufacturer models are available. Use Data import to upload history and train a model.")
+        else:
+            chosen_slug = st.selectbox(
+                "Select manufacturer", trained_slugs,
+                format_func=display_manufacturer_name,
+                key="assessment_manufacturer",
+            )
+            try:
+                selected_model = load_manufacturer_model(chosen_slug)
+                if selected_model is None:
+                    st.error("This manufacturer's model is missing. Retrain it in Data import.")
+                else:
+                    selected_model_name = f"{display_manufacturer_name(chosen_slug)} model"
+                    selected_metrics = load_manufacturer_metrics(chosen_slug)
+                    model_ready = True
+                    st.success(f"Predictions will use {selected_model_name}.")
+            except Exception as exc:
+                st.error(f"The selected model could not be loaded: {exc}")
+
+    st.markdown("---")
+    if model_ready:
         with st.form("assessment_form"):
             st.markdown("#### Shipment profile")
             a, b, c = st.columns(3)
             with a:
-                supplier_country = st.selectbox("Supplier country", ["China", "India", "Turkey", "UAE", "Germany", "Italy", "Saudi Arabia", "Kenya"])
+                supplier_country = st.selectbox("Supplier country", ["China", "India", "Turkey", "UAE", "Germany", "Italy", "Saudi Arabia", "Kenya", "Egypt", "United Arab Emirates"])
                 transport_mode = st.selectbox("Transport mode", ["Sea", "Air", "Road", "Rail"])
-                product_category = st.selectbox("Input category", ["Raw materials", "Packaging", "Chemicals", "Spare parts", "Electronics", "Food ingredients"])
+                product_category = st.selectbox("Input category", ["Raw materials", "Raw Materials", "Packaging", "Chemicals", "Spare parts", "Spare Parts", "Electronics", "Food ingredients", "Food Ingredients", "Machinery", "Textiles"])
                 criticality = st.selectbox("Production criticality", ["Low", "Medium", "High", "Critical"], index=2)
             with b:
                 order_quantity = st.number_input("Order quantity (units)", min_value=1, max_value=10_000_000, value=1000, step=100)
@@ -247,125 +359,194 @@ elif page == "New assessment":
                 "criticality": criticality,
             }
             input_df = pd.DataFrame([row], columns=FEATURES)
-            probability = float(model.predict_proba(input_df)[0, 1])
-            band, label = risk_band(probability)
-            st.markdown("---")
-            st.markdown("### Assessment result")
-            r1, r2, r3 = st.columns([1, 1, 2])
-            with r1:
-                st.metric("Estimated delay probability", f"{probability:.0%}")
-            with r2:
-                st.metric("Risk band", band)
-            with r3:
-                st.markdown(f"**{label}**")
-                st.progress(probability)
-                st.caption("Model estimate based on entered inputs and a synthetic-data baseline. It is not a confirmed ETA.")
-            likely_delay_days = max(1, round(planned_lead_time_days * 0.15 + 3))
-            st.markdown("### What this means operationally")
-            if inventory_days <= planned_lead_time_days * .25:
-                st.warning("Inventory cover is low relative to planned lead time. Confirm stock, consumption, and replenishment timing.")
-            elif criticality in ("High", "Critical"):
-                st.info("This input is marked production-critical. A contingency plan may be worthwhile even if the estimated risk is not high.")
-            else:
-                st.info("Use the estimate as a prompt for verification. Confirm milestone dates with the supplier or carrier.")
-            st.markdown("### Recommended next steps")
-            for i, (tag, action) in enumerate(recommendations(row, probability), start=1):
-                with st.container(border=True):
-                    st.markdown(f"**{i}. {tag}**")
-                    st.write(action)
-            st.caption(f"Planning note: if a delay occurs, a scenario of about {likely_delay_days} extra days can be used for discussion, but this is a rough planning assumption, not a model prediction of delay duration.")
+            try:
+                probability = float(selected_model.predict_proba(input_df)[0, 1])
+                band, label = risk_band(probability)
+                st.markdown("### Assessment result")
+                st.info(f"**Model used:** {selected_model_name}")
+                r1, r2, r3 = st.columns([1, 1, 2])
+                with r1:
+                    st.metric("Estimated delay probability", f"{probability:.0%}")
+                with r2:
+                    st.metric("Risk band", band)
+                with r3:
+                    st.markdown(f"**{label}**")
+                    st.progress(probability)
+                    st.caption("Model estimate based on the entered inputs, not a confirmed ETA.")
+                if selected_metrics:
+                    with st.expander("Selected model evaluation metrics"):
+                        metric_cols = st.columns(4)
+                        for col, key, label_text in zip(metric_cols, ["accuracy", "precision", "recall", "f1"], ["Accuracy", "Precision", "Recall", "F1 score"]):
+                            value = selected_metrics.get(key)
+                            col.metric(label_text, f"{value:.3f}" if isinstance(value, (int, float)) else "N/A")
+                st.markdown("### What this means operationally")
+                if inventory_days <= planned_lead_time_days * .25:
+                    st.warning("Inventory cover is low relative to planned lead time. Confirm stock, consumption, and replenishment timing.")
+                elif criticality in ("High", "Critical"):
+                    st.info("This input is marked production-critical. A contingency plan may be worthwhile even if the estimated risk is not high.")
+                else:
+                    st.info("Use the estimate as a prompt for verification. Confirm milestone dates with the supplier or carrier.")
+                st.markdown("### Recommended next steps")
+                for i, (tag, action) in enumerate(recommendations(row, probability), start=1):
+                    with st.container(border=True):
+                        st.markdown(f"**{i}. {tag}**")
+                        st.write(action)
+                likely_delay_days = max(1, round(planned_lead_time_days * 0.15 + 3))
+                st.caption(f"Planning note: if a delay occurs, a scenario of about {likely_delay_days} extra days can be discussed. This is a rough assumption, not a model prediction of delay duration.")
+            except Exception as exc:
+                st.error(f"The selected model could not generate a prediction. No other model was substituted. Details: {exc}")
+
 
 elif page == "Shipment explorer":
     st.markdown("## Shipment explorer")
-    st.write("Explore the generated sample data or, after importing, review the structure of your own records.")
-    if df.empty:
-        st.warning("No sample dataset found. Run `python generate_data.py`.")
+    st.write("Choose which shipment history you want to inspect.")
+    selected_df, source_label, is_general = choose_data_source(df, "explorer_data_source")
+    if selected_df.empty:
+        st.info("No records are available for this data source yet.")
     else:
         filt1, filt2, filt3 = st.columns(3)
         with filt1:
-            modes = sorted(df["transport_mode"].dropna().unique().tolist())
+            modes = sorted(selected_df["transport_mode"].dropna().unique().tolist()) if "transport_mode" in selected_df else []
             selected_modes = st.multiselect("Transport mode", modes, default=modes)
         with filt2:
-            crits = sorted(df["criticality"].dropna().unique().tolist())
+            crits = sorted(selected_df["criticality"].dropna().unique().tolist()) if "criticality" in selected_df else []
             selected_crits = st.multiselect("Criticality", crits, default=crits)
         with filt3:
             delay_choice = st.selectbox("Delay status", ["All", "Delayed", "Not delayed"])
-        view = df[df["transport_mode"].isin(selected_modes) & df["criticality"].isin(selected_crits)]
-        if delay_choice == "Delayed":
+        view = selected_df.copy()
+        if "transport_mode" in view:
+            view = view[view["transport_mode"].isin(selected_modes)]
+        if "criticality" in view:
+            view = view[view["criticality"].isin(selected_crits)]
+        if delay_choice == "Delayed" and "is_delayed" in view:
             view = view[view["is_delayed"] == 1]
-        elif delay_choice == "Not delayed":
+        elif delay_choice == "Not delayed" and "is_delayed" in view:
             view = view[view["is_delayed"] == 0]
-        st.caption(f"{len(view):,} records match the selected filters.")
+        st.caption(f"{len(view):,} records from {source_label} match the selected filters.")
         st.dataframe(view, use_container_width=True, hide_index=True)
         st.download_button("Download filtered records", data=view.to_csv(index=False).encode("utf-8"), file_name="ayen_filtered_shipments.csv", mime="text/csv")
+        if is_general:
+            st.caption("The general dataset is synthetic demonstration data.")
+        else:
+            st.caption("Manufacturer records are loaded from the saved local history for this demo app.")
+
 
 elif page == "Data import":
-    st.markdown("## Import company shipment history")
-    st.write("Upload historical shipment records to inspect data quality and calculate company-specific summaries. Uploading does **not** silently retrain the baseline model.")
-    st.info("For this MVP, the CSV needs the model input columns plus `is_delayed` (1 = actual lead time exceeded planned lead time; 0 = it did not). Records need known outcomes. Do not label shipments still in transit as on-time.")
-    with st.expander("Required CSV columns", expanded=False):
-        st.code(", ".join(REQUIRED_UPLOAD_COLUMNS))
-        st.write("Numeric risk signals should be numeric; reliability and risk fields use a 0–1 scale. Extra columns are allowed and ignored for model summaries.")
-    uploaded = st.file_uploader("Choose a historical shipment CSV", type=["csv"])
+    st.markdown("## Manufacturer data & model training")
+    st.write("Create a manufacturer profile, save historical shipment records, and train a model specifically for that manufacturer's data.")
+    st.warning("Demo limitation: uploaded data and models are stored in the app's local filesystem. This is not secure, persistent multi-company storage for production use.")
+
+    manufacturers = list_manufacturers()
+    profile_options = ["__new__"] + manufacturers
+    selected_profile = st.selectbox(
+        "Manufacturer profile", profile_options, key="import_manufacturer_profile",
+        format_func=lambda value: "Create a new profile" if value == "__new__" else display_manufacturer_name(value),
+    )
+    if selected_profile == "__new__":
+        manufacturer_name = st.text_input("New manufacturer name", placeholder="e.g. Addis Manufacturing", key="new_manufacturer_name")
+    else:
+        manufacturer_name = selected_profile
+        st.caption(f"Selected profile: {display_manufacturer_name(selected_profile)}")
+
+    st.markdown("### Upload historical shipment data")
+    st.info("CSV must contain the 13 model input features plus `is_delayed`. Use 1 for a known delayed shipment and 0 for a known not-delayed shipment. Do not label shipments still in transit as on-time.")
+    with st.expander("Required CSV columns"):
+        st.code(", ".join(MANUFACTURER_REQUIRED_COLUMNS))
+    uploaded = st.file_uploader("Choose a historical shipment CSV", type=["csv"], key="manufacturer_csv_upload")
+
     if uploaded is not None:
         try:
-            company_df = pd.read_csv(uploaded)
-            st.markdown("### File preview")
-            st.dataframe(company_df.head(10), use_container_width=True, hide_index=True)
-            missing_cols = [c for c in REQUIRED_UPLOAD_COLUMNS if c not in company_df.columns]
-            if missing_cols:
-                st.error("This file is missing required columns: " + ", ".join(missing_cols))
-                st.write("Rename or add the required columns before using this MVP's data-quality summary.")
-            else:
-                st.success(f"Required columns found. {len(company_df):,} rows loaded.")
-                invalid_labels = sorted(set(company_df["is_delayed"].dropna().unique()) - {0, 1})
-                numeric_errors = []
-                for col in NUMERIC_FEATURES + ["is_delayed"]:
-                    converted = pd.to_numeric(company_df[col], errors="coerce")
-                    if converted.isna().sum() > company_df[col].isna().sum():
-                        numeric_errors.append(col)
-                if invalid_labels:
-                    st.error(f"`is_delayed` must use only 0 and 1. Unexpected values: {invalid_labels}")
-                elif numeric_errors:
-                    st.error("Some numeric columns contain non-numeric values: " + ", ".join(numeric_errors))
-                else:
-                    miss = company_df[REQUIRED_UPLOAD_COLUMNS].isna().sum().sum()
-                    delay_rate = pd.to_numeric(company_df["is_delayed"], errors="coerce").mean()
-                    x, y, z = st.columns(3)
-                    x.metric("Uploaded records", f"{len(company_df):,}")
-                    y.metric("Historical delay rate", f"{delay_rate:.1%}")
-                    z.metric("Missing required cells", f"{int(miss):,}")
-                    st.markdown("### Company-specific patterns")
-                    left, right = st.columns(2)
-                    with left:
-                        make_chart(company_df, "transport_mode", "Company records by transport mode", "is_delayed")
-                    with right:
-                        make_chart(company_df, "supplier_country", "Company records by supplier country", "is_delayed")
-                    st.caption("This analysis stays in the current app session. The uploaded file is not automatically saved to disk or used to retrain the model.")
+            raw_df = pd.read_csv(uploaded)
+            st.markdown("#### File preview")
+            st.dataframe(raw_df.head(10), use_container_width=True, hide_index=True)
+            try:
+                validated_df = validate_history(raw_df)
+                delay_count = int(validated_df["is_delayed"].sum())
+                on_time_count = int((validated_df["is_delayed"] == 0).sum())
+                a, b, c = st.columns(3)
+                a.metric("Historical shipments", f"{len(validated_df):,}")
+                b.metric("Delayed", f"{delay_count:,}")
+                c.metric("Not delayed", f"{on_time_count:,}")
+                st.metric("Historical delay rate", f"{validated_df['is_delayed'].mean():.1%}")
+                if st.button("Save manufacturer history", type="primary", use_container_width=True):
+                    if not str(manufacturer_name).strip() or manufacturer_name == "__new__":
+                        st.error("Enter a manufacturer name before saving.")
+                    else:
+                        saved_path = save_history(manufacturer_name, validated_df)
+                        st.success(f"Saved {len(validated_df):,} records for {manufacturer_name}.")
+                        st.caption(f"Saved locally to `{saved_path.relative_to(ROOT)}`")
+                        st.info("The profile will be available in the selectors. Train its model in the section below or after this page refreshes.")
+            except ValueError as exc:
+                st.error(f"Data validation failed: {exc}")
         except Exception as exc:
             st.error(f"Could not read this CSV: {exc}")
 
+    st.markdown("---")
+    st.markdown("### Train a manufacturer-specific model")
+    manufacturers = list_manufacturers()
+    if not manufacturers:
+        st.info("No saved manufacturer histories yet. Upload and save a CSV above.")
+    else:
+        train_slug = st.selectbox(
+            "Manufacturer to train", manufacturers,
+            format_func=display_manufacturer_name,
+            key="training_manufacturer_profile",
+        )
+        saved_history = load_history(train_slug)
+        if saved_history is None:
+            st.error("The saved history could not be loaded.")
+        else:
+            st.write(f"Saved historical records: **{len(saved_history):,}**")
+            class_counts = saved_history["is_delayed"].value_counts().to_dict() if "is_delayed" in saved_history else {}
+            st.caption(f"Outcome counts (0 = not delayed, 1 = delayed): {class_counts}")
+            if st.button("Train and evaluate model", type="primary", use_container_width=True):
+                try:
+                    result = train_manufacturer_model(train_slug, saved_history)
+                    st.success(f"Successfully trained and saved the model for {display_manufacturer_name(train_slug)}.")
+                    show_model_metrics(result, "Held-out evaluation results")
+                    st.metric("Training records", result["training_rows"])
+                    st.caption("Metrics use a held-out split of uploaded history. They do not guarantee future performance.")
+                except (ValueError, OSError) as exc:
+                    st.error(f"Model training was not completed: {exc}")
+
+
 elif page == "Model transparency":
     st.markdown("## Model transparency")
-    st.write("AYEN currently uses a supervised baseline classifier trained on synthetic shipment examples. It provides a risk estimate from shipment and supplier signals.")
-    st.warning("Important limitation: synthetic data is useful for testing the product workflow, but model scores on synthetic data do not prove accuracy on real shipments.")
-    if metrics:
-        st.markdown("### Held-out synthetic test results")
-        cols = st.columns(5)
-        for col, key, label in zip(cols, ["accuracy", "precision", "recall", "f1", "roc_auc"], ["Accuracy", "Precision", "Recall", "F1 score", "ROC-AUC"]):
-            val = metrics.get(key)
-            col.metric(label, f"{val:.3f}" if isinstance(val, (float, int)) else "N/A")
-        st.caption(f"Evaluated on {metrics.get('test_rows', 'N/A')} held-out synthetic records. These are not real-world validation results.")
+    st.write("Inspect the evaluation metrics and training context for the general model or a trained manufacturer-specific model.")
+    selected_type = st.radio(
+        "Model to inspect", ["General AYEN Model", "Manufacturer-Specific Model"],
+        horizontal=True, key="transparency_model_type",
+    )
+    if selected_type == "General AYEN Model":
+        st.warning("The baseline model is trained on synthetic demonstration data. Its scores do not establish accuracy on real shipments.")
+        show_model_metrics(metrics, "Baseline held-out test results", baseline=True)
+        if metrics:
+            st.caption(f"Dataset type: {metrics.get('dataset_type', 'not specified')}; threshold: {metrics.get('threshold', 'N/A')}")
     else:
-        st.info("No evaluation metrics found. Run `python train_model.py`.")
-    st.markdown("### How the label works")
-    st.code("is_delayed = 1 if actual_lead_time_days > planned_lead_time_days else 0")
+        trained_slugs = list_trained_manufacturers()
+        if not trained_slugs:
+            st.info("No trained manufacturer-specific models are available. Upload historical data and train a model in Data import.")
+        else:
+            selected_slug = st.selectbox(
+                "Select manufacturer model", trained_slugs,
+                format_func=display_manufacturer_name,
+                key="transparency_manufacturer",
+            )
+            manufacturer_metrics = load_manufacturer_metrics(selected_slug)
+            st.markdown(f"### {display_manufacturer_name(selected_slug)} model")
+            if manufacturer_metrics:
+                show_model_metrics(manufacturer_metrics, "Held-out manufacturer-history results")
+                a, b, c = st.columns(3)
+                a.metric("Total historical records", f"{manufacturer_metrics.get('total_rows', 'N/A'):,}" if isinstance(manufacturer_metrics.get("total_rows"), int) else "N/A")
+                b.metric("Training records", f"{manufacturer_metrics.get('training_rows', 'N/A'):,}" if isinstance(manufacturer_metrics.get("training_rows"), int) else "N/A")
+                c.metric("Historical delay rate", f"{manufacturer_metrics.get('delay_rate', 0):.1%}" if isinstance(manufacturer_metrics.get("delay_rate"), (int, float)) else "N/A")
+                st.caption("Evaluation is based on a held-out split of uploaded records. Small or unrepresentative histories may produce unstable metrics.")
+            else:
+                st.warning("The model file exists, but its metrics file is missing. Retrain this model in Data import.")
+
     st.markdown("### Model input signals")
     st.write(", ".join(FEATURES))
-    st.markdown("### What is not implemented yet")
-    st.write("- Live weather/news feeds or verified external disruption alerts")
-    st.write("- Automatic retraining from customer uploads")
-    st.write("- Validated delay-duration prediction and financial-loss estimation")
-    st.write("- Real supplier directory, live ETAs, or authenticated multi-company accounts")
-    st.markdown("### Sensible next step before real deployment")
-    st.write("Test on real historical shipments with known outcomes, validate labels and missing data, measure performance by route and product category, and get feedback from supply-chain practitioners before using the estimates for operational decisions.")
+    st.markdown("### Important limitations")
+    st.write("- Synthetic demonstration results are not real-world validation.\n- No live weather/news feeds or verified external disruption alerts.\n- No validated prediction of delay duration or financial loss.\n- Uploaded histories and models use local filesystem storage in this MVP; authentication, secure tenant isolation, and durable shared storage are not implemented.")
+    st.markdown("### Label definition")
+    st.code("is_delayed = 1 if actual_lead_time_days > planned_lead_time_days else 0")

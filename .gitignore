@@ -1,31 +1,10 @@
-# Python
 __pycache__/
 *.py[cod]
-*.so
-.pytest_cache/
-.mypy_cache/
-
-# Virtual environments
-myenv/
-venv/
 .venv/
-env/
-
-# Secrets and local configuration
 .env
-.env.*
-!.env.example
-.streamlit/secrets.toml
-
-# Editors and operating systems
-.vscode/
-.idea/
 .DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Local uploads and temporary files
-uploads/
-temp/
+# Manufacturer histories may contain company data; do not commit them.
+data/manufacturers/
+# Generated model artifacts are deployment-specific; create them with train_model.py.
+models/*.joblib
+models/model_metrics.json

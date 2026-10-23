@@ -25,7 +25,7 @@ def main():
     supplier = rng.choice(SUPPLIERS, n)
     country = rng.choice(COUNTRIES, n, p=[.28, .22, .12, .12, .09, .06, .06, .05])
     mode = rng.choice(MODES, n, p=[.55, .17, .20, .08])
-    category = rng.choice(CATEGORIES, n, p=[.24, .19, .14, .18, .13, .12])
+    category = rng.choice(CATEGORIES, n, p=[.24, .19, .14, .17, .13, .13])
 
     # Supplier-level reliability is stable enough to learn from, but not deterministic.
     supplier_base = {s: float(rng.beta(8, 2)) for s in SUPPLIERS}
