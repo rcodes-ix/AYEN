@@ -1,5 +1,7 @@
 # AYEN: Supply Chain Disruption Intelligence
 
+https://ayen-supply-chain.streamlit.app/
+
 AYEN is an AI-powered supply chain intelligence application designed to help manufacturers assess shipment disruption risk, explore historical shipment data, and make more informed logistics and inventory decisions.
 
 The application combines machine learning-based delay prediction with shipment analytics and actionable recommendations. It supports a general prediction model as well as manufacturer-specific models trained on uploaded shipment histories.
