@@ -1,0 +1,28 @@
+{
+  "dataset_type": "synthetic",
+  "test_rows": 1200,
+  "delay_rate_test": 0.7342,
+  "accuracy": 0.6733,
+  "precision": 0.7769,
+  "recall": 0.7787,
+  "f1": 0.7778,
+  "roc_auc": 0.6283,
+  "threshold": 0.5,
+  "features": [
+    "order_quantity",
+    "planned_lead_time_days",
+    "supplier_reliability",
+    "port_congestion",
+    "weather_severity",
+    "customs_delay_risk",
+    "inventory_days",
+    "historical_delay_rate",
+    "shipment_cost",
+    "supplier_country",
+    "transport_mode",
+    "product_category",
+    "criticality"
+  ],
+  "target": "is_delayed",
+  "warning": "Evaluation uses synthetic data and does not establish real-world performance."
+}

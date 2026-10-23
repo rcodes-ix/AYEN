@@ -1,0 +1,1201 @@
+shipment_id,supplier_id,material_type,supplier_reliability,planned_transit_days,historical_avg_delay_days,inventory_coverage_days,shipping_method,customs_clearance_days,lead_time_variability,material_criticality,seasonal_risk,actual_delay_days,disrupted
+SHP-00001,SUP-046,Spare part,0.887,14,1.0,28.1,Rail,7.4,3.65,Low,Low,0,0
+SHP-00002,SUP-037,Raw material,0.861,8,1.43,21.0,Road,2.1,2.74,High,Low,4,1
+SHP-00003,SUP-056,Packaging,0.825,13,5.15,14.1,Road,1.7,3.73,Low,Medium,8,0
+SHP-00004,SUP-053,Raw material,0.644,14,3.5,18.9,Sea,4.5,2.66,Medium,Low,2,0
+SHP-00005,SUP-046,Electronic component,0.918,14,1.91,21.0,Road,8.2,2.63,Medium,Low,0,0
+SHP-00006,SUP-037,Spare part,0.81,11,2.45,13.5,Road,6.6,3.14,Medium,Medium,10,1
+SHP-00007,SUP-018,Packaging,0.937,8,5.45,28.7,Road,0.5,4.16,Medium,Low,2,1
+SHP-00008,SUP-025,Spare part,0.721,9,2.75,22.6,Air,5.5,5.83,High,High,6,0
+SHP-00009,SUP-008,Raw material,0.85,13,1.79,10.9,Sea,1.7,1.95,Critical,Medium,4,0
+SHP-00010,SUP-023,Packaging,0.698,24,4.73,33.1,Road,2.0,2.26,Low,High,4,0
+SHP-00011,SUP-056,Spare part,0.774,29,3.58,18.8,Sea,1.6,4.11,Critical,Medium,4,1
+SHP-00012,SUP-026,Electronic component,0.843,18,3.77,9.2,Road,2.1,1.15,High,High,9,0
+SHP-00013,SUP-007,Raw material,0.728,9,4.44,11.4,Air,1.8,4.48,High,Low,1,0
+SHP-00014,SUP-040,Spare part,0.875,13,4.43,29.9,Road,0.9,3.92,High,Medium,1,0
+SHP-00015,SUP-058,Electronic component,0.998,5,0.4,32.6,Rail,6.3,1.14,High,Medium,2,0
+SHP-00016,SUP-053,Packaging,0.542,33,5.63,26.1,Air,3.6,2.4,High,High,6,0
+SHP-00017,SUP-017,Spare part,0.9,12,1.44,28.6,Rail,2.6,4.03,Medium,Low,11,0
+SHP-00018,SUP-028,Raw material,0.872,21,1.02,27.7,Road,1.6,5.28,High,Medium,3,0
+SHP-00019,SUP-032,Electronic component,0.662,28,4.9,22.5,Sea,2.2,6.12,Medium,Medium,12,1
+SHP-00020,SUP-015,Raw material,0.886,38,3.21,20.6,Sea,3.0,5.1,Low,Low,3,0
+SHP-00021,SUP-017,Electronic component,0.86,26,2.64,22.3,Rail,3.5,1.23,High,High,7,1
+SHP-00022,SUP-015,Raw material,0.868,14,4.53,23.9,Air,4.8,2.52,Low,Low,6,0
+SHP-00023,SUP-060,Chemical,0.964,22,1.0,12.1,Sea,2.2,2.36,Medium,Low,5,0
+SHP-00024,SUP-045,Raw material,0.945,37,3.26,23.9,Road,1.3,2.22,Low,Medium,4,0
+SHP-00025,SUP-051,Packaging,0.893,12,2.2,29.7,Sea,3.5,3.41,Medium,Medium,1,0
+SHP-00026,SUP-049,Raw material,0.905,8,2.23,16.3,Road,4.0,1.18,High,Low,5,0
+SHP-00027,SUP-058,Electronic component,0.999,11,0.16,15.5,Sea,10.4,0.36,High,Low,4,1
+SHP-00028,SUP-007,Electronic component,0.729,21,5.53,21.8,Road,1.2,1.6,Medium,Low,3,0
+SHP-00029,SUP-053,Chemical,0.696,14,4.46,12.8,Road,6.5,5.11,Low,Medium,8,0
+SHP-00030,SUP-004,Electronic component,0.767,16,4.42,7.5,Rail,3.2,1.69,Medium,High,5,1
+SHP-00031,SUP-029,Electronic component,0.782,23,2.17,27.2,Rail,2.3,3.02,Medium,Medium,3,0
+SHP-00032,SUP-036,Spare part,0.996,11,2.14,14.4,Sea,3.1,1.1,High,Low,10,0
+SHP-00033,SUP-022,Packaging,0.921,16,2.0,18.1,Sea,3.0,1.52,High,Medium,10,0
+SHP-00034,SUP-009,Raw material,0.892,13,3.19,13.1,Road,1.5,2.06,Medium,High,11,1
+SHP-00035,SUP-012,Spare part,0.698,37,4.15,28.2,Road,0.5,2.68,Medium,Medium,1,0
+SHP-00036,SUP-050,Electronic component,0.886,25,6.54,24.8,Road,6.5,0.92,Critical,Low,7,1
+SHP-00037,SUP-020,Raw material,0.702,14,6.57,16.1,Rail,1.2,3.0,High,Low,1,0
+SHP-00038,SUP-019,Electronic component,0.727,14,3.22,8.6,Rail,1.9,2.27,Medium,High,3,0
+SHP-00039,SUP-056,Raw material,0.87,39,3.43,15.2,Sea,1.3,1.51,Medium,High,3,1
+SHP-00040,SUP-009,Raw material,0.863,37,2.16,22.6,Sea,3.9,6.23,Low,Low,5,0
+SHP-00041,SUP-055,Chemical,0.744,21,5.32,19.5,Road,2.5,1.73,Critical,High,3,1
+SHP-00042,SUP-056,Raw material,0.839,17,2.63,18.9,Rail,1.3,2.26,Medium,Low,3,0
+SHP-00043,SUP-036,Chemical,0.995,9,1.08,19.7,Rail,3.7,2.08,Medium,Low,1,0
+SHP-00044,SUP-010,Spare part,0.68,11,4.33,24.1,Rail,2.6,7.15,Critical,Medium,4,0
+SHP-00045,SUP-010,Packaging,0.597,8,7.05,17.7,Road,1.4,2.65,High,Medium,6,1
+SHP-00046,SUP-018,Chemical,0.977,29,3.91,21.6,Road,1.3,4.39,Low,Low,4,1
+SHP-00047,SUP-035,Chemical,0.562,9,4.18,10.1,Road,4.6,3.7,Low,High,6,1
+SHP-00048,SUP-010,Spare part,0.615,13,8.08,38.4,Road,2.7,3.48,Low,High,6,1
+SHP-00049,SUP-028,Electronic component,0.815,6,1.98,15.7,Sea,1.1,3.68,High,Low,10,0
+SHP-00050,SUP-007,Raw material,0.73,7,2.82,19.6,Road,6.3,6.08,Low,Medium,7,0
+SHP-00051,SUP-033,Packaging,0.808,24,4.76,22.5,Rail,0.3,2.12,Critical,Medium,3,0
+SHP-00052,SUP-002,Packaging,0.681,20,2.36,14.7,Rail,1.1,3.77,Critical,Medium,9,1
+SHP-00053,SUP-043,Raw material,0.836,17,2.87,18.1,Sea,1.2,2.78,High,High,4,0
+SHP-00054,SUP-004,Packaging,0.756,14,3.01,18.0,Road,1.4,3.11,High,Medium,8,1
+SHP-00055,SUP-012,Raw material,0.702,7,7.69,10.7,Road,1.3,4.59,Medium,Low,4,0
+SHP-00056,SUP-011,Spare part,0.835,13,1.71,21.5,Road,0.7,1.78,Low,Low,11,0
+SHP-00057,SUP-050,Raw material,0.862,15,1.59,4.8,Rail,2.5,1.99,High,High,2,1
+SHP-00058,SUP-004,Raw material,0.735,23,8.03,32.0,Road,4.3,1.69,Low,High,6,1
+SHP-00059,SUP-026,Raw material,0.868,28,2.24,24.3,Sea,2.4,3.26,Low,Low,6,0
+SHP-00060,SUP-036,Raw material,0.985,24,4.21,23.1,Road,2.8,1.89,Medium,Low,3,0
+SHP-00061,SUP-031,Raw material,0.658,20,3.52,4.1,Road,1.7,6.37,Low,Medium,3,0
+SHP-00062,SUP-041,Raw material,0.392,17,5.15,11.7,Road,2.4,3.66,Medium,Low,5,1
+SHP-00063,SUP-049,Raw material,0.916,19,4.85,29.1,Sea,2.9,6.44,High,Low,3,0
+SHP-00064,SUP-024,Raw material,0.949,12,7.63,51.2,Sea,3.6,3.18,High,High,6,1
+SHP-00065,SUP-050,Electronic component,0.849,17,5.57,27.6,Air,2.1,3.59,High,High,0,0
+SHP-00066,SUP-020,Electronic component,0.714,15,3.06,26.3,Rail,1.9,2.49,Critical,High,5,1
+SHP-00067,SUP-060,Electronic component,0.983,45,1.78,22.2,Air,1.0,1.49,Medium,Medium,5,1
+SHP-00068,SUP-031,Electronic component,0.757,19,2.36,11.2,Air,8.3,2.43,Critical,Low,11,1
+SHP-00069,SUP-045,Raw material,0.856,5,1.79,26.0,Road,7.2,4.82,Medium,High,4,0
+SHP-00070,SUP-053,Raw material,0.594,13,3.59,9.2,Rail,2.1,2.33,Medium,Low,6,0
+SHP-00071,SUP-048,Raw material,0.432,14,5.12,8.3,Sea,2.2,4.41,Critical,Low,9,1
+SHP-00072,SUP-052,Chemical,0.814,26,3.2,7.8,Road,6.8,2.61,Medium,High,9,1
+SHP-00073,SUP-033,Spare part,0.876,20,2.59,25.8,Air,0.8,1.8,Low,Medium,4,0
+SHP-00074,SUP-003,Spare part,0.697,19,5.17,17.5,Rail,1.0,2.29,Medium,High,8,1
+SHP-00075,SUP-030,Packaging,0.551,32,5.13,18.8,Rail,6.2,2.39,Medium,Low,1,0
+SHP-00076,SUP-011,Packaging,0.777,37,4.38,17.9,Road,1.7,2.71,Medium,High,3,0
+SHP-00077,SUP-054,Electronic component,0.736,24,5.03,9.0,Air,1.7,3.92,High,Medium,7,1
+SHP-00078,SUP-015,Chemical,0.879,14,1.92,12.6,Sea,3.8,2.43,Critical,Medium,7,1
+SHP-00079,SUP-014,Chemical,0.778,14,3.04,13.0,Road,2.1,1.89,Medium,High,7,1
+SHP-00080,SUP-015,Spare part,0.9,3,12.0,6.8,Road,5.5,2.19,High,Low,4,0
+SHP-00081,SUP-039,Spare part,0.699,29,3.1,14.0,Road,2.4,6.2,Medium,Medium,7,1
+SHP-00082,SUP-035,Electronic component,0.633,14,5.52,9.3,Road,2.1,2.83,High,Medium,8,1
+SHP-00083,SUP-057,Chemical,0.797,16,1.84,22.6,Sea,2.2,3.04,Low,Medium,4,1
+SHP-00084,SUP-025,Chemical,0.64,13,5.77,23.3,Rail,3.7,4.04,Low,High,5,1
+SHP-00085,SUP-017,Electronic component,0.903,9,1.51,7.7,Road,2.7,0.97,Medium,Medium,3,0
+SHP-00086,SUP-003,Spare part,0.658,45,4.16,15.6,Road,1.7,3.06,High,Low,6,1
+SHP-00087,SUP-001,Raw material,0.764,16,3.27,32.8,Sea,3.7,2.54,High,Low,3,0
+SHP-00088,SUP-023,Spare part,0.776,34,3.22,10.2,Road,6.0,2.89,High,High,6,1
+SHP-00089,SUP-056,Chemical,0.834,14,2.59,21.4,Air,4.2,4.84,High,High,6,0
+SHP-00090,SUP-032,Raw material,0.757,12,4.16,18.8,Road,1.2,1.82,Medium,High,4,0
+SHP-00091,SUP-054,Packaging,0.743,23,5.79,26.7,Road,0.9,5.46,Low,Low,4,0
+SHP-00092,SUP-007,Raw material,0.799,28,2.03,20.4,Air,3.6,3.74,Low,Low,2,0
+SHP-00093,SUP-006,Chemical,0.646,29,3.94,14.5,Road,4.2,7.9,Low,Medium,11,1
+SHP-00094,SUP-051,Chemical,0.784,15,1.69,18.5,Air,2.4,1.29,Medium,Medium,5,0
+SHP-00095,SUP-007,Packaging,0.73,24,3.86,18.7,Road,1.9,9.75,Medium,Low,19,1
+SHP-00096,SUP-004,Spare part,0.732,13,2.44,17.3,Air,1.2,1.8,Medium,Medium,0,0
+SHP-00097,SUP-025,Raw material,0.644,17,4.2,7.4,Sea,0.9,2.61,High,Low,9,1
+SHP-00098,SUP-056,Raw material,0.853,14,3.06,27.9,Air,1.3,1.58,Medium,Medium,2,0
+SHP-00099,SUP-042,Electronic component,0.782,13,1.76,26.5,Road,0.9,3.73,High,Low,6,0
+SHP-00100,SUP-006,Raw material,0.632,18,4.87,9.6,Air,4.8,3.29,High,Low,14,1
+SHP-00101,SUP-051,Electronic component,0.863,9,4.81,15.6,Sea,1.4,1.64,Medium,Low,5,0
+SHP-00102,SUP-051,Raw material,0.869,27,3.66,16.2,Road,2.1,6.05,Medium,High,15,1
+SHP-00103,SUP-049,Electronic component,0.967,13,0.87,8.7,Road,1.0,0.33,High,Medium,3,0
+SHP-00104,SUP-055,Electronic component,0.753,26,3.34,3.1,Sea,4.1,4.73,High,High,4,1
+SHP-00105,SUP-015,Spare part,0.947,10,2.15,12.6,Road,4.0,1.92,Medium,Medium,1,1
+SHP-00106,SUP-059,Raw material,0.604,13,4.26,15.1,Air,2.3,2.91,Medium,Low,6,1
+SHP-00107,SUP-020,Spare part,0.704,9,2.47,6.5,Sea,2.0,2.52,High,Low,7,0
+SHP-00108,SUP-049,Electronic component,0.886,9,1.56,19.4,Road,2.0,1.9,High,Medium,7,0
+SHP-00109,SUP-035,Electronic component,0.6,11,4.17,27.3,Rail,5.6,2.85,Low,Low,1,0
+SHP-00110,SUP-047,Packaging,0.803,10,3.39,24.7,Rail,0.5,4.1,Medium,Medium,9,0
+SHP-00111,SUP-038,Electronic component,0.876,9,1.85,17.0,Road,2.3,1.86,Critical,High,4,0
+SHP-00112,SUP-039,Raw material,0.775,17,1.72,3.3,Sea,1.1,3.93,Low,High,8,1
+SHP-00113,SUP-037,Packaging,0.844,22,2.13,23.7,Road,1.1,1.83,Critical,Low,6,0
+SHP-00114,SUP-047,Raw material,0.838,23,6.87,19.2,Road,4.7,2.81,Low,Medium,12,1
+SHP-00115,SUP-045,Electronic component,0.887,6,3.1,21.4,Sea,2.7,2.57,Medium,Low,4,0
+SHP-00116,SUP-009,Packaging,0.864,14,2.91,33.5,Road,1.2,2.43,Medium,Low,3,0
+SHP-00117,SUP-050,Electronic component,0.853,14,1.78,11.4,Sea,3.5,5.0,Low,Medium,1,0
+SHP-00118,SUP-033,Spare part,0.848,32,2.15,1.0,Road,2.6,5.32,Critical,Medium,8,1
+SHP-00119,SUP-020,Raw material,0.756,15,1.84,9.6,Rail,3.9,4.22,Medium,Medium,3,0
+SHP-00120,SUP-031,Spare part,0.782,16,2.22,21.9,Road,2.9,4.78,Critical,Low,2,0
+SHP-00121,SUP-059,Chemical,0.681,8,4.45,18.2,Air,2.8,4.48,Medium,High,4,0
+SHP-00122,SUP-052,Spare part,0.825,11,3.2,8.3,Sea,2.1,2.04,Critical,High,8,1
+SHP-00123,SUP-051,Spare part,0.788,7,2.37,6.6,Sea,2.8,2.6,Critical,Medium,9,1
+SHP-00124,SUP-028,Raw material,0.814,17,2.79,15.2,Sea,1.0,1.14,High,High,4,1
+SHP-00125,SUP-048,Packaging,0.503,32,5.2,8.0,Air,2.5,3.21,Medium,Low,8,1
+SHP-00126,SUP-024,Raw material,0.987,11,1.03,22.2,Sea,5.9,0.53,High,Medium,0,0
+SHP-00127,SUP-042,Chemical,0.77,15,4.03,14.7,Rail,3.1,2.08,High,High,10,1
+SHP-00128,SUP-039,Packaging,0.74,10,3.76,13.0,Sea,1.6,3.42,Critical,High,8,1
+SHP-00129,SUP-015,Raw material,0.916,12,1.72,11.9,Air,1.6,1.55,Medium,High,2,0
+SHP-00130,SUP-016,Spare part,0.715,18,2.42,20.1,Sea,2.8,4.64,Medium,Medium,11,1
+SHP-00131,SUP-004,Raw material,0.78,40,2.59,18.3,Road,2.4,1.85,Low,High,5,1
+SHP-00132,SUP-009,Packaging,0.849,32,2.04,19.6,Rail,3.4,3.46,High,Medium,14,1
+SHP-00133,SUP-027,Chemical,0.894,36,1.63,19.4,Air,2.1,1.22,Critical,Low,10,1
+SHP-00134,SUP-029,Raw material,0.674,26,2.53,17.4,Road,1.8,5.69,Low,Low,17,0
+SHP-00135,SUP-010,Packaging,0.678,15,6.9,9.7,Road,3.8,2.36,High,Medium,24,1
+SHP-00136,SUP-026,Chemical,0.715,14,6.48,12.2,Sea,4.8,3.86,Critical,Medium,3,1
+SHP-00137,SUP-037,Raw material,0.789,11,2.91,14.8,Rail,4.0,2.01,Low,Medium,2,0
+SHP-00138,SUP-014,Packaging,0.808,4,3.35,34.5,Road,3.5,5.99,Low,High,4,1
+SHP-00139,SUP-021,Raw material,0.896,15,3.12,7.2,Road,3.6,5.41,High,Medium,7,1
+SHP-00140,SUP-023,Packaging,0.731,33,3.34,14.6,Road,2.5,3.71,High,Low,9,0
+SHP-00141,SUP-031,Raw material,0.699,32,4.23,18.8,Air,0.6,3.84,Low,Low,2,0
+SHP-00142,SUP-022,Spare part,0.858,45,3.67,15.6,Sea,0.7,3.77,High,Medium,3,0
+SHP-00143,SUP-045,Spare part,0.878,18,2.74,26.6,Sea,2.2,3.29,High,Medium,7,1
+SHP-00144,SUP-020,Raw material,0.793,9,4.5,15.5,Air,2.3,4.38,Critical,Medium,13,1
+SHP-00145,SUP-027,Electronic component,0.882,22,1.68,16.1,Air,1.9,1.33,Critical,Medium,6,1
+SHP-00146,SUP-023,Packaging,0.786,40,3.11,24.5,Road,1.1,2.82,High,Medium,5,0
+SHP-00147,SUP-011,Chemical,0.894,35,10.61,32.5,Sea,2.8,1.55,Medium,Medium,3,1
+SHP-00148,SUP-042,Electronic component,0.767,13,5.25,29.3,Road,9.0,6.0,Medium,High,7,1
+SHP-00149,SUP-015,Raw material,0.864,9,2.87,16.9,Road,0.9,1.23,Medium,Low,5,0
+SHP-00150,SUP-018,Raw material,0.95,9,0.98,17.6,Sea,1.5,5.68,Low,Medium,5,0
+SHP-00151,SUP-048,Spare part,0.469,11,5.4,18.4,Sea,3.9,4.43,High,Medium,13,1
+SHP-00152,SUP-057,Electronic component,0.773,12,5.03,19.2,Road,4.3,4.52,Low,Low,11,1
+SHP-00153,SUP-041,Spare part,0.452,14,6.75,11.2,Air,2.7,3.87,Medium,Medium,4,0
+SHP-00154,SUP-055,Electronic component,0.708,23,2.22,25.5,Rail,1.2,1.96,Low,Medium,2,1
+SHP-00155,SUP-052,Spare part,0.836,14,1.41,19.7,Road,1.8,5.53,Medium,Medium,2,0
+SHP-00156,SUP-029,Raw material,0.778,17,3.97,17.6,Road,6.8,3.64,Medium,Medium,3,0
+SHP-00157,SUP-047,Raw material,0.813,7,1.59,7.8,Road,1.1,1.53,High,Low,5,1
+SHP-00158,SUP-020,Spare part,0.711,11,2.62,18.5,Rail,1.1,3.05,High,Low,12,1
+SHP-00159,SUP-028,Spare part,0.825,11,2.64,2.9,Rail,5.8,2.38,Low,Low,7,1
+SHP-00160,SUP-033,Electronic component,0.854,7,4.9,13.3,Rail,2.8,3.19,Critical,Low,3,0
+SHP-00161,SUP-058,Electronic component,0.921,14,3.07,13.5,Road,1.2,1.13,Critical,Medium,1,0
+SHP-00162,SUP-051,Electronic component,0.792,7,2.72,20.3,Sea,1.6,1.62,Medium,High,14,1
+SHP-00163,SUP-030,Electronic component,0.678,13,5.38,33.0,Air,2.1,3.55,High,Medium,3,0
+SHP-00164,SUP-040,Raw material,0.865,18,7.92,22.6,Sea,2.6,1.45,Medium,Low,4,1
+SHP-00165,SUP-013,Spare part,0.775,33,3.27,29.6,Road,1.8,5.94,Low,Low,3,1
+SHP-00166,SUP-049,Raw material,0.932,11,0.88,23.2,Air,1.0,3.5,High,Low,6,0
+SHP-00167,SUP-034,Chemical,0.976,17,0.78,27.0,Sea,2.6,3.21,Low,Medium,4,0
+SHP-00168,SUP-032,Raw material,0.647,12,3.08,32.9,Road,1.1,1.97,Critical,Low,6,1
+SHP-00169,SUP-046,Raw material,0.917,7,1.36,12.1,Road,7.1,1.58,Critical,Medium,4,1
+SHP-00170,SUP-038,Packaging,0.908,33,1.82,11.6,Road,0.8,1.83,High,Medium,13,1
+SHP-00171,SUP-005,Electronic component,0.753,18,3.79,23.4,Road,2.3,1.9,High,Medium,1,0
+SHP-00172,SUP-018,Packaging,0.976,21,0.5,18.0,Rail,1.3,2.81,High,Low,5,0
+SHP-00173,SUP-011,Raw material,0.788,36,1.9,19.8,Road,1.3,3.49,Critical,Low,9,1
+SHP-00174,SUP-045,Spare part,0.906,13,3.3,16.0,Road,0.8,3.47,Medium,Medium,9,1
+SHP-00175,SUP-003,Chemical,0.702,8,3.08,13.2,Air,6.3,5.14,Low,Medium,7,1
+SHP-00176,SUP-013,Spare part,0.807,10,2.03,31.0,Road,8.7,4.48,High,Low,7,0
+SHP-00177,SUP-036,Raw material,0.999,8,1.32,9.2,Road,2.8,8.87,Medium,High,0,0
+SHP-00178,SUP-042,Electronic component,0.815,28,5.7,23.5,Air,3.4,2.64,Medium,Medium,5,0
+SHP-00179,SUP-031,Electronic component,0.787,41,4.44,22.2,Road,1.3,2.55,Low,Medium,9,0
+SHP-00180,SUP-052,Packaging,0.85,18,3.84,5.4,Road,5.4,3.41,High,Low,13,0
+SHP-00181,SUP-056,Electronic component,0.835,23,6.73,11.4,Road,1.9,4.93,Medium,Low,5,1
+SHP-00182,SUP-008,Raw material,0.903,27,2.82,12.7,Road,0.4,0.84,Medium,Low,3,0
+SHP-00183,SUP-058,Electronic component,0.982,37,6.07,22.5,Rail,4.0,0.97,Low,Low,5,0
+SHP-00184,SUP-037,Raw material,0.854,40,7.32,15.1,Road,4.4,1.8,Medium,Medium,7,1
+SHP-00185,SUP-039,Electronic component,0.714,6,2.34,17.3,Road,6.1,3.28,Critical,Medium,14,1
+SHP-00186,SUP-006,Raw material,0.683,12,2.45,6.3,Sea,1.5,2.76,Medium,High,2,0
+SHP-00187,SUP-038,Raw material,0.88,17,1.41,36.6,Sea,1.3,4.28,High,High,5,0
+SHP-00188,SUP-044,Packaging,0.903,11,4.76,18.6,Road,2.5,2.54,High,Low,6,0
+SHP-00189,SUP-035,Electronic component,0.582,14,4.26,22.0,Road,2.6,3.68,Medium,Low,4,0
+SHP-00190,SUP-006,Electronic component,0.676,20,3.45,13.7,Rail,4.0,4.07,High,Medium,3,1
+SHP-00191,SUP-032,Packaging,0.701,5,5.28,12.8,Sea,2.5,1.74,High,High,7,1
+SHP-00192,SUP-057,Chemical,0.832,20,2.11,33.3,Sea,1.8,3.2,High,High,6,0
+SHP-00193,SUP-044,Electronic component,0.952,26,2.25,2.7,Road,6.3,1.04,Low,Low,4,0
+SHP-00194,SUP-009,Packaging,0.849,17,3.71,20.2,Road,3.2,3.99,Low,Low,5,1
+SHP-00195,SUP-058,Spare part,0.982,4,0.75,8.3,Road,4.4,0.39,Critical,Low,7,0
+SHP-00196,SUP-058,Packaging,0.969,14,0.7,14.8,Sea,1.0,2.72,High,High,5,1
+SHP-00197,SUP-011,Spare part,0.794,19,3.13,12.9,Sea,3.2,1.85,Critical,Medium,9,1
+SHP-00198,SUP-049,Chemical,0.967,27,2.11,10.1,Road,4.6,4.32,Critical,Medium,14,1
+SHP-00199,SUP-025,Raw material,0.653,25,5.42,18.3,Rail,2.4,2.12,Low,Medium,10,1
+SHP-00200,SUP-036,Electronic component,0.925,16,1.07,1.0,Road,1.6,2.17,High,Low,8,0
+SHP-00201,SUP-027,Chemical,0.846,12,1.88,15.5,Air,3.1,3.68,Medium,Medium,7,0
+SHP-00202,SUP-047,Spare part,0.787,16,7.74,17.3,Sea,3.6,3.32,High,Low,3,0
+SHP-00203,SUP-060,Electronic component,0.977,6,3.72,7.1,Rail,5.4,2.36,Low,Medium,17,1
+SHP-00204,SUP-048,Raw material,0.461,12,5.23,30.1,Road,0.5,3.24,Medium,Medium,4,0
+SHP-00205,SUP-056,Packaging,0.827,30,5.21,13.2,Rail,2.4,1.37,High,Medium,5,1
+SHP-00206,SUP-057,Raw material,0.842,16,1.66,16.1,Road,0.7,2.97,High,Low,3,0
+SHP-00207,SUP-006,Chemical,0.666,20,3.64,13.3,Sea,4.4,3.61,High,High,9,1
+SHP-00208,SUP-016,Packaging,0.684,8,4.08,17.3,Road,4.3,2.27,Medium,Medium,9,0
+SHP-00209,SUP-044,Chemical,0.942,27,1.57,28.5,Sea,1.7,0.95,Medium,Low,4,0
+SHP-00210,SUP-036,Spare part,0.999,15,1.21,37.8,Road,0.8,1.61,Critical,Low,2,0
+SHP-00211,SUP-004,Packaging,0.696,19,5.0,24.0,Road,1.3,2.79,Medium,Medium,12,1
+SHP-00212,SUP-006,Packaging,0.641,22,6.11,26.7,Road,1.9,7.78,Medium,Low,7,0
+SHP-00213,SUP-032,Chemical,0.625,26,3.68,31.7,Road,2.0,6.21,High,Low,2,0
+SHP-00214,SUP-037,Spare part,0.851,18,1.41,20.0,Road,3.8,3.89,Medium,Low,3,0
+SHP-00215,SUP-011,Spare part,0.837,15,1.42,30.6,Air,4.6,5.51,High,Low,3,0
+SHP-00216,SUP-011,Raw material,0.874,9,1.0,24.3,Road,2.3,1.63,Medium,Medium,2,0
+SHP-00217,SUP-008,Packaging,0.932,7,5.98,19.2,Road,1.2,1.48,High,Medium,4,1
+SHP-00218,SUP-034,Raw material,0.967,18,3.12,20.8,Road,1.8,4.07,Critical,Low,3,0
+SHP-00219,SUP-001,Spare part,0.733,20,4.27,3.4,Road,2.3,3.13,Critical,Medium,4,0
+SHP-00220,SUP-035,Packaging,0.613,21,3.63,20.3,Sea,1.8,3.81,High,Low,10,1
+SHP-00221,SUP-029,Electronic component,0.758,11,2.61,5.7,Sea,2.8,1.82,Medium,Low,6,1
+SHP-00222,SUP-028,Raw material,0.817,12,4.97,5.0,Road,4.3,4.7,High,Low,21,1
+SHP-00223,SUP-041,Electronic component,0.495,18,3.76,19.5,Sea,1.9,5.18,High,Medium,11,1
+SHP-00224,SUP-032,Chemical,0.681,13,3.33,9.1,Air,8.3,2.99,High,High,9,1
+SHP-00225,SUP-044,Raw material,0.956,45,4.41,17.9,Sea,2.4,1.36,High,Medium,2,0
+SHP-00226,SUP-046,Raw material,0.933,12,1.57,19.1,Road,1.7,4.54,High,Low,4,0
+SHP-00227,SUP-056,Spare part,0.805,20,4.13,19.5,Road,1.1,1.99,High,Low,3,0
+SHP-00228,SUP-048,Chemical,0.505,25,4.97,10.8,Rail,2.0,2.92,High,Low,0,0
+SHP-00229,SUP-032,Raw material,0.725,25,3.37,25.2,Sea,2.2,5.75,Medium,High,8,0
+SHP-00230,SUP-030,Electronic component,0.642,13,4.22,17.3,Air,3.2,6.22,Medium,Low,9,1
+SHP-00231,SUP-015,Spare part,0.872,22,2.24,21.5,Rail,1.6,1.65,High,High,7,1
+SHP-00232,SUP-036,Chemical,0.953,20,0.78,8.4,Road,1.5,7.01,Low,Medium,3,1
+SHP-00233,SUP-009,Packaging,0.843,22,2.46,16.6,Air,2.2,2.42,Critical,Medium,7,1
+SHP-00234,SUP-056,Electronic component,0.858,18,1.12,26.8,Sea,2.0,1.73,High,High,7,0
+SHP-00235,SUP-051,Electronic component,0.795,25,2.52,25.8,Road,1.2,3.62,Low,Low,3,0
+SHP-00236,SUP-008,Raw material,0.906,19,3.61,11.6,Air,3.3,1.0,High,Medium,9,0
+SHP-00237,SUP-048,Chemical,0.427,8,9.29,13.6,Road,1.3,3.64,High,Low,8,1
+SHP-00238,SUP-008,Raw material,0.883,18,5.46,10.1,Rail,1.6,2.78,High,High,9,1
+SHP-00239,SUP-044,Raw material,0.932,19,1.01,12.7,Rail,2.0,2.25,Medium,Medium,4,0
+SHP-00240,SUP-006,Chemical,0.739,24,2.12,6.8,Sea,5.8,4.68,Critical,Low,11,1
+SHP-00241,SUP-030,Spare part,0.591,18,4.73,16.9,Sea,0.4,2.66,Medium,High,2,0
+SHP-00242,SUP-040,Chemical,0.931,37,2.1,23.1,Rail,4.4,6.36,High,Low,4,0
+SHP-00243,SUP-044,Electronic component,0.933,16,3.07,11.7,Road,4.8,1.59,Low,Low,4,0
+SHP-00244,SUP-026,Electronic component,0.857,13,1.85,17.3,Road,6.8,2.57,High,Medium,7,1
+SHP-00245,SUP-056,Electronic component,0.843,32,2.77,16.2,Road,5.3,1.99,High,Medium,2,1
+SHP-00246,SUP-047,Electronic component,0.839,15,2.72,26.4,Road,2.8,1.33,High,High,0,0
+SHP-00247,SUP-013,Packaging,0.819,17,2.39,13.1,Road,3.7,2.61,Medium,Medium,0,0
+SHP-00248,SUP-041,Electronic component,0.511,19,3.63,13.4,Rail,6.0,5.32,High,Medium,9,1
+SHP-00249,SUP-044,Packaging,0.912,19,3.53,11.2,Road,0.3,1.95,High,Low,3,0
+SHP-00250,SUP-021,Spare part,0.919,22,2.45,8.9,Road,0.7,1.26,Medium,Low,20,1
+SHP-00251,SUP-045,Spare part,0.872,23,3.97,22.2,Sea,2.5,4.09,Critical,High,11,1
+SHP-00252,SUP-054,Raw material,0.763,12,5.34,16.9,Road,3.9,4.73,High,Low,8,1
+SHP-00253,SUP-050,Electronic component,0.815,9,2.76,18.4,Rail,4.0,2.37,Critical,Medium,0,0
+SHP-00254,SUP-046,Raw material,0.925,10,3.46,28.2,Sea,2.7,2.67,Critical,Low,3,0
+SHP-00255,SUP-039,Electronic component,0.76,30,7.06,28.7,Rail,6.8,4.64,Critical,Low,3,0
+SHP-00256,SUP-017,Electronic component,0.884,15,7.51,4.8,Road,2.4,3.44,High,Medium,8,1
+SHP-00257,SUP-048,Raw material,0.464,25,5.84,23.2,Road,1.2,4.93,High,Medium,8,1
+SHP-00258,SUP-022,Chemical,0.771,24,3.83,19.8,Rail,2.2,3.92,Low,Medium,8,1
+SHP-00259,SUP-032,Electronic component,0.693,17,4.2,14.3,Rail,3.4,3.95,High,High,5,1
+SHP-00260,SUP-019,Spare part,0.688,10,4.72,20.6,Road,2.0,3.34,High,Low,5,0
+SHP-00261,SUP-019,Raw material,0.712,24,5.58,4.2,Rail,4.1,2.04,High,Medium,10,1
+SHP-00262,SUP-010,Raw material,0.673,17,4.3,29.7,Rail,1.2,2.38,Critical,Low,8,0
+SHP-00263,SUP-058,Electronic component,0.999,9,6.42,22.1,Road,3.6,2.49,Low,Medium,6,0
+SHP-00264,SUP-009,Raw material,0.96,13,6.04,11.1,Rail,3.7,1.39,Medium,Low,2,0
+SHP-00265,SUP-006,Raw material,0.633,7,4.28,13.3,Road,5.2,4.26,Medium,Medium,5,0
+SHP-00266,SUP-057,Spare part,0.871,13,2.61,4.4,Road,0.8,1.23,Medium,Low,5,0
+SHP-00267,SUP-034,Raw material,0.969,17,1.26,15.5,Sea,1.4,1.08,Low,High,10,1
+SHP-00268,SUP-027,Raw material,0.877,16,3.51,14.1,Road,1.8,2.13,Low,High,4,0
+SHP-00269,SUP-045,Packaging,0.91,15,1.85,7.4,Rail,0.6,0.61,High,High,1,0
+SHP-00270,SUP-023,Electronic component,0.774,17,2.57,24.2,Road,3.5,1.95,Medium,Low,5,0
+SHP-00271,SUP-008,Packaging,0.894,21,3.34,28.2,Road,2.7,1.56,Low,High,6,0
+SHP-00272,SUP-044,Electronic component,0.914,26,1.11,17.8,Sea,3.3,2.45,Low,Low,4,0
+SHP-00273,SUP-011,Spare part,0.788,27,5.09,15.6,Road,1.8,2.5,Medium,Low,3,0
+SHP-00274,SUP-034,Raw material,0.906,11,3.34,21.5,Road,4.8,2.57,Low,Low,2,0
+SHP-00275,SUP-057,Electronic component,0.843,29,6.64,17.8,Sea,2.2,2.61,High,Low,16,1
+SHP-00276,SUP-057,Chemical,0.811,17,3.44,9.3,Air,5.3,2.34,High,Medium,3,0
+SHP-00277,SUP-022,Spare part,0.789,14,4.51,12.8,Air,1.4,2.09,Medium,Low,2,0
+SHP-00278,SUP-047,Electronic component,0.824,10,4.59,15.6,Road,1.5,2.76,High,Low,7,1
+SHP-00279,SUP-037,Packaging,0.878,4,5.23,20.0,Road,2.0,4.72,Low,Medium,4,0
+SHP-00280,SUP-029,Raw material,0.783,21,3.44,18.1,Air,2.3,2.12,Medium,High,3,1
+SHP-00281,SUP-009,Raw material,0.839,20,2.16,19.7,Road,2.8,6.66,Critical,Medium,7,1
+SHP-00282,SUP-023,Raw material,0.815,12,3.45,5.8,Road,0.2,2.83,High,Medium,3,0
+SHP-00283,SUP-040,Chemical,0.935,13,4.06,23.3,Sea,2.4,3.58,Critical,Low,8,1
+SHP-00284,SUP-060,Electronic component,0.993,15,4.04,18.0,Road,7.9,2.35,Medium,High,3,0
+SHP-00285,SUP-001,Chemical,0.785,14,1.72,38.4,Road,2.1,3.64,Medium,Low,6,0
+SHP-00286,SUP-044,Raw material,0.972,11,11.18,14.9,Road,4.0,0.96,Medium,Low,6,0
+SHP-00287,SUP-051,Spare part,0.868,9,1.92,20.6,Rail,11.9,1.85,Medium,Low,5,0
+SHP-00288,SUP-058,Spare part,0.977,29,3.23,40.6,Rail,8.0,0.46,Critical,Medium,1,1
+SHP-00289,SUP-026,Raw material,0.863,13,5.71,19.6,Sea,0.9,2.17,Low,Low,5,0
+SHP-00290,SUP-008,Raw material,0.909,20,2.21,17.5,Road,3.7,3.2,Critical,Medium,8,1
+SHP-00291,SUP-017,Raw material,0.848,22,5.17,10.1,Road,3.9,2.25,Critical,Low,1,0
+SHP-00292,SUP-052,Spare part,0.829,21,1.41,30.2,Rail,3.3,4.24,High,Medium,4,0
+SHP-00293,SUP-053,Raw material,0.588,23,7.11,8.7,Road,0.7,3.35,Medium,Medium,17,1
+SHP-00294,SUP-039,Packaging,0.682,21,6.06,21.4,Rail,2.5,2.57,Medium,Low,9,1
+SHP-00295,SUP-008,Electronic component,0.936,12,2.84,14.2,Sea,3.3,1.46,Medium,Medium,12,0
+SHP-00296,SUP-008,Chemical,0.92,14,4.17,16.5,Rail,1.4,3.33,High,Medium,5,1
+SHP-00297,SUP-029,Electronic component,0.829,28,7.07,6.6,Road,2.5,5.88,Medium,Medium,6,1
+SHP-00298,SUP-036,Packaging,0.974,13,5.05,28.7,Sea,2.6,6.38,Critical,Low,3,0
+SHP-00299,SUP-002,Spare part,0.611,17,4.38,15.8,Road,2.0,4.66,High,Medium,6,1
+SHP-00300,SUP-042,Raw material,0.754,21,3.86,8.3,Sea,3.5,4.5,Medium,Low,3,0
+SHP-00301,SUP-033,Spare part,0.836,34,2.56,28.0,Rail,1.7,1.26,High,Low,7,1
+SHP-00302,SUP-001,Raw material,0.754,27,2.97,14.0,Rail,2.3,1.8,Medium,Low,10,1
+SHP-00303,SUP-006,Electronic component,0.693,10,5.48,20.7,Sea,4.9,2.38,Critical,Medium,2,1
+SHP-00304,SUP-028,Spare part,0.804,20,2.77,24.7,Rail,6.6,5.25,Medium,Low,10,0
+SHP-00305,SUP-044,Packaging,0.94,19,3.75,21.8,Rail,0.7,4.53,Critical,Medium,4,0
+SHP-00306,SUP-050,Chemical,0.818,14,2.85,1.0,Road,4.2,8.1,High,Low,8,1
+SHP-00307,SUP-026,Raw material,0.858,17,2.78,23.6,Air,1.4,1.54,Critical,Medium,0,0
+SHP-00308,SUP-018,Electronic component,0.954,12,1.07,17.2,Rail,3.7,1.86,Medium,Low,3,0
+SHP-00309,SUP-059,Electronic component,0.644,15,5.75,15.4,Road,1.5,2.12,High,Medium,4,1
+SHP-00310,SUP-028,Packaging,0.809,13,1.53,17.1,Air,4.9,1.44,Medium,Medium,3,0
+SHP-00311,SUP-019,Electronic component,0.737,18,6.18,5.1,Air,1.9,2.7,High,Low,0,0
+SHP-00312,SUP-027,Electronic component,0.873,14,9.17,19.5,Road,5.0,1.5,Low,Low,3,0
+SHP-00313,SUP-001,Electronic component,0.813,35,3.16,7.1,Road,1.6,1.81,Medium,Medium,5,0
+SHP-00314,SUP-019,Raw material,0.74,18,3.59,15.7,Rail,0.5,2.37,Medium,High,9,0
+SHP-00315,SUP-031,Electronic component,0.716,16,2.29,19.3,Road,2.6,6.03,Medium,High,4,1
+SHP-00316,SUP-056,Raw material,0.765,15,2.71,26.6,Road,2.5,4.89,Medium,Low,10,1
+SHP-00317,SUP-045,Spare part,0.864,14,4.6,11.4,Rail,8.4,1.42,High,Medium,7,0
+SHP-00318,SUP-047,Packaging,0.814,9,5.36,29.6,Road,2.4,4.57,Medium,Low,8,1
+SHP-00319,SUP-033,Raw material,0.809,25,3.4,25.6,Road,0.9,1.88,High,Low,3,0
+SHP-00320,SUP-007,Chemical,0.776,32,5.05,14.6,Air,4.5,1.55,Low,Medium,2,1
+SHP-00321,SUP-024,Spare part,0.951,13,1.1,9.1,Road,5.4,1.29,High,Medium,6,1
+SHP-00322,SUP-060,Raw material,0.999,28,2.49,6.4,Sea,1.0,2.17,High,Medium,10,1
+SHP-00323,SUP-003,Raw material,0.714,45,7.21,20.2,Sea,4.1,2.24,Medium,High,5,1
+SHP-00324,SUP-053,Raw material,0.636,40,5.43,12.1,Rail,5.0,4.5,High,Low,14,1
+SHP-00325,SUP-042,Raw material,0.76,31,7.49,27.6,Sea,3.8,2.3,Critical,Medium,8,1
+SHP-00326,SUP-018,Chemical,0.954,9,6.27,12.6,Sea,2.0,2.51,High,Low,6,0
+SHP-00327,SUP-047,Spare part,0.883,9,3.43,10.8,Road,2.5,1.31,Medium,Low,2,1
+SHP-00328,SUP-051,Raw material,0.747,23,5.76,19.9,Air,2.9,3.01,Medium,Low,1,0
+SHP-00329,SUP-003,Chemical,0.642,17,2.95,12.5,Road,5.6,2.62,High,High,2,0
+SHP-00330,SUP-007,Raw material,0.708,6,2.19,18.1,Air,1.3,2.88,Medium,Medium,4,0
+SHP-00331,SUP-040,Packaging,0.88,14,5.05,25.9,Rail,4.2,6.51,High,Low,2,0
+SHP-00332,SUP-060,Chemical,0.999,22,2.64,18.9,Road,2.7,1.23,Medium,Medium,4,0
+SHP-00333,SUP-002,Electronic component,0.668,15,4.43,19.0,Road,2.4,2.22,High,High,11,0
+SHP-00334,SUP-040,Raw material,0.866,17,3.78,19.6,Sea,2.2,2.51,Low,High,6,1
+SHP-00335,SUP-009,Packaging,0.897,9,0.88,4.5,Road,0.2,2.37,Low,Medium,2,0
+SHP-00336,SUP-040,Spare part,0.915,13,2.0,21.1,Road,0.2,2.27,Critical,Low,2,0
+SHP-00337,SUP-038,Raw material,0.889,23,1.68,19.3,Road,0.3,3.13,Critical,Medium,7,1
+SHP-00338,SUP-006,Raw material,0.687,13,4.15,25.1,Rail,3.0,2.74,Critical,High,4,0
+SHP-00339,SUP-041,Raw material,0.47,30,5.74,22.8,Sea,1.8,5.41,Critical,High,10,1
+SHP-00340,SUP-054,Packaging,0.745,17,4.52,16.4,Sea,1.2,2.97,Medium,High,9,0
+SHP-00341,SUP-052,Packaging,0.829,21,4.29,26.3,Rail,2.1,1.38,Medium,Medium,0,0
+SHP-00342,SUP-002,Chemical,0.655,23,2.59,15.7,Road,5.0,4.76,Low,Low,1,0
+SHP-00343,SUP-015,Chemical,0.899,22,2.13,20.0,Road,2.8,2.48,Medium,Medium,10,1
+SHP-00344,SUP-015,Spare part,0.95,10,2.09,15.5,Rail,0.8,2.9,Medium,Low,13,0
+SHP-00345,SUP-028,Chemical,0.731,11,2.31,21.7,Sea,10.1,1.93,Critical,Low,4,0
+SHP-00346,SUP-009,Raw material,0.812,6,1.69,15.0,Air,2.2,4.1,Low,Medium,9,0
+SHP-00347,SUP-052,Packaging,0.763,14,1.97,31.2,Road,5.0,8.14,Low,Medium,5,1
+SHP-00348,SUP-047,Electronic component,0.811,11,4.79,34.1,Rail,4.6,1.49,Medium,High,0,0
+SHP-00349,SUP-049,Electronic component,0.907,13,0.88,25.0,Rail,2.3,3.93,Medium,Medium,1,0
+SHP-00350,SUP-012,Spare part,0.67,15,2.6,30.3,Rail,6.5,3.62,Medium,High,7,0
+SHP-00351,SUP-001,Chemical,0.716,18,3.88,5.7,Rail,2.1,3.13,High,Medium,2,1
+SHP-00352,SUP-055,Spare part,0.704,16,4.54,6.6,Air,2.9,4.67,Medium,Medium,2,1
+SHP-00353,SUP-018,Electronic component,0.999,15,1.7,15.4,Rail,3.4,2.95,High,Low,1,0
+SHP-00354,SUP-040,Packaging,0.942,20,0.95,18.3,Sea,2.8,4.36,Critical,Medium,0,0
+SHP-00355,SUP-055,Electronic component,0.72,16,2.35,16.4,Rail,6.6,2.01,High,Low,7,0
+SHP-00356,SUP-003,Raw material,0.699,25,3.95,4.9,Road,2.2,5.69,High,Low,8,1
+SHP-00357,SUP-001,Raw material,0.711,16,3.55,27.2,Road,2.5,3.71,Medium,Low,1,0
+SHP-00358,SUP-001,Packaging,0.684,34,3.4,35.2,Rail,2.6,1.93,Low,High,1,0
+SHP-00359,SUP-010,Raw material,0.661,10,5.72,28.2,Rail,8.2,2.93,Medium,Medium,7,1
+SHP-00360,SUP-004,Spare part,0.735,14,3.29,26.7,Rail,4.7,3.33,Critical,High,3,0
+SHP-00361,SUP-050,Raw material,0.849,12,1.4,19.8,Air,0.5,1.97,High,High,3,0
+SHP-00362,SUP-037,Raw material,0.794,18,2.64,11.3,Road,1.4,2.58,Medium,High,1,0
+SHP-00363,SUP-059,Chemical,0.644,10,5.2,18.6,Air,3.1,2.86,Medium,Low,5,0
+SHP-00364,SUP-049,Raw material,0.922,8,1.9,34.8,Air,5.7,9.77,High,High,5,0
+SHP-00365,SUP-058,Spare part,0.968,11,2.89,15.2,Road,6.1,2.95,High,High,1,0
+SHP-00366,SUP-015,Chemical,0.913,8,3.72,14.4,Road,2.9,2.26,High,High,5,1
+SHP-00367,SUP-018,Raw material,0.907,15,2.09,26.9,Road,1.3,1.17,Critical,Low,6,0
+SHP-00368,SUP-051,Chemical,0.859,18,2.67,27.4,Road,2.7,4.79,High,Low,10,1
+SHP-00369,SUP-015,Packaging,0.871,7,2.18,11.2,Sea,2.4,3.18,High,High,6,0
+SHP-00370,SUP-004,Chemical,0.792,14,4.17,15.9,Sea,2.6,1.82,Medium,Low,6,0
+SHP-00371,SUP-041,Spare part,0.46,27,5.02,14.0,Rail,5.1,3.48,Low,Low,16,1
+SHP-00372,SUP-049,Chemical,0.868,31,3.42,18.6,Road,2.4,2.24,Critical,Medium,2,0
+SHP-00373,SUP-059,Packaging,0.659,24,4.44,26.8,Air,1.1,3.55,High,Low,3,0
+SHP-00374,SUP-056,Electronic component,0.851,5,1.19,11.6,Air,2.7,3.48,Medium,Low,2,1
+SHP-00375,SUP-008,Chemical,0.912,17,3.23,26.7,Road,3.6,2.1,High,High,8,1
+SHP-00376,SUP-047,Spare part,0.818,29,3.17,18.8,Sea,5.1,3.82,Low,High,21,1
+SHP-00377,SUP-051,Packaging,0.882,13,5.3,36.6,Road,1.0,1.8,High,High,0,0
+SHP-00378,SUP-042,Packaging,0.798,9,1.87,20.6,Road,2.8,2.68,Medium,Low,3,0
+SHP-00379,SUP-050,Electronic component,0.843,28,3.18,17.2,Road,3.6,4.97,High,Low,2,0
+SHP-00380,SUP-051,Chemical,0.855,30,2.09,22.6,Road,4.0,3.73,High,Medium,10,1
+SHP-00381,SUP-027,Spare part,0.95,16,0.53,15.3,Sea,1.6,1.99,Medium,Medium,1,0
+SHP-00382,SUP-003,Raw material,0.781,9,1.63,3.6,Rail,3.2,3.3,Low,Low,10,1
+SHP-00383,SUP-028,Raw material,0.774,7,6.76,16.1,Road,3.8,2.8,High,Medium,4,1
+SHP-00384,SUP-013,Packaging,0.792,19,3.55,15.9,Rail,1.6,1.53,Low,High,4,1
+SHP-00385,SUP-007,Electronic component,0.779,12,2.94,5.3,Road,3.3,6.28,Low,Medium,2,0
+SHP-00386,SUP-008,Packaging,0.854,16,1.29,17.4,Road,1.9,1.56,High,Low,0,0
+SHP-00387,SUP-042,Raw material,0.716,15,6.93,1.5,Road,1.2,2.71,Medium,Low,20,1
+SHP-00388,SUP-031,Electronic component,0.707,11,2.85,15.2,Air,1.5,9.81,Medium,Low,7,0
+SHP-00389,SUP-033,Packaging,0.847,7,3.25,19.9,Road,1.3,1.45,Medium,Low,13,1
+SHP-00390,SUP-045,Packaging,0.891,13,2.59,18.8,Sea,1.4,2.14,Critical,Medium,5,0
+SHP-00391,SUP-033,Packaging,0.81,18,8.09,14.7,Road,0.7,5.32,Medium,Medium,2,0
+SHP-00392,SUP-038,Chemical,0.859,18,2.64,17.3,Air,3.8,6.64,Medium,Medium,7,0
+SHP-00393,SUP-006,Packaging,0.629,12,3.6,11.7,Sea,3.9,4.36,Medium,High,4,1
+SHP-00394,SUP-052,Chemical,0.773,29,3.71,18.1,Road,2.7,5.24,Medium,Low,1,0
+SHP-00395,SUP-027,Packaging,0.962,9,2.59,18.5,Road,2.1,1.66,Medium,Low,6,0
+SHP-00396,SUP-010,Packaging,0.675,4,12.0,10.8,Sea,1.5,1.71,Low,Low,5,0
+SHP-00397,SUP-049,Packaging,0.947,26,1.99,20.1,Rail,2.0,4.12,Low,Low,4,0
+SHP-00398,SUP-045,Raw material,0.878,17,1.29,20.1,Air,3.2,2.32,Medium,Medium,10,0
+SHP-00399,SUP-004,Raw material,0.763,13,2.84,16.7,Road,2.8,2.52,Critical,High,2,1
+SHP-00400,SUP-012,Packaging,0.698,21,4.23,37.4,Road,2.0,2.76,Low,High,0,0
+SHP-00401,SUP-001,Spare part,0.658,15,4.85,16.9,Rail,1.4,4.58,Medium,Medium,6,0
+SHP-00402,SUP-017,Packaging,0.838,8,1.36,15.8,Sea,3.7,3.65,Critical,Low,2,0
+SHP-00403,SUP-006,Raw material,0.59,9,3.92,14.6,Road,1.5,3.8,Critical,Low,3,1
+SHP-00404,SUP-043,Packaging,0.805,14,7.84,10.2,Sea,0.7,3.4,High,Low,8,1
+SHP-00405,SUP-032,Raw material,0.659,12,3.03,23.5,Air,2.4,2.38,Medium,Low,2,0
+SHP-00406,SUP-059,Chemical,0.717,26,5.39,12.5,Road,1.2,2.91,Medium,High,1,0
+SHP-00407,SUP-045,Spare part,0.893,12,1.97,13.5,Road,2.7,1.24,Medium,Medium,0,0
+SHP-00408,SUP-037,Packaging,0.895,12,2.45,13.7,Road,2.8,1.2,Low,Low,12,1
+SHP-00409,SUP-031,Packaging,0.739,11,3.17,10.1,Rail,1.3,3.56,Medium,Low,3,0
+SHP-00410,SUP-004,Electronic component,0.797,11,3.51,4.0,Air,2.3,2.84,High,Low,3,0
+SHP-00411,SUP-005,Electronic component,0.708,11,3.69,14.3,Rail,4.9,2.68,Medium,High,6,1
+SHP-00412,SUP-037,Spare part,0.868,8,2.35,25.0,Road,7.7,2.09,High,Low,1,0
+SHP-00413,SUP-001,Chemical,0.776,18,4.29,19.6,Air,3.0,3.51,Medium,Low,7,0
+SHP-00414,SUP-003,Packaging,0.692,15,2.54,30.5,Rail,1.3,4.45,Medium,Low,2,0
+SHP-00415,SUP-014,Electronic component,0.811,15,3.5,24.0,Rail,3.6,3.53,High,High,4,0
+SHP-00416,SUP-054,Raw material,0.785,7,1.59,22.2,Rail,2.0,1.41,Critical,Medium,7,1
+SHP-00417,SUP-028,Raw material,0.798,20,5.59,33.1,Road,2.7,1.16,Medium,Medium,2,0
+SHP-00418,SUP-043,Raw material,0.844,21,2.56,17.2,Air,2.4,1.68,High,Low,4,0
+SHP-00419,SUP-025,Electronic component,0.629,33,5.82,18.5,Road,3.3,2.0,Medium,Low,6,1
+SHP-00420,SUP-011,Spare part,0.84,20,1.13,17.9,Road,0.3,5.57,Low,High,11,1
+SHP-00421,SUP-023,Packaging,0.783,36,4.39,30.4,Road,1.5,2.48,High,Low,12,0
+SHP-00422,SUP-006,Raw material,0.626,11,3.39,18.0,Rail,1.4,2.39,Low,Low,6,1
+SHP-00423,SUP-047,Raw material,0.824,34,2.95,12.8,Rail,1.3,2.26,Medium,Medium,0,0
+SHP-00424,SUP-012,Electronic component,0.743,21,4.71,22.7,Road,4.2,1.54,Medium,Low,3,0
+SHP-00425,SUP-023,Chemical,0.794,19,3.03,11.5,Sea,1.6,1.57,Medium,Low,7,0
+SHP-00426,SUP-059,Electronic component,0.725,15,4.56,22.3,Sea,1.1,2.68,Low,High,3,1
+SHP-00427,SUP-036,Chemical,0.999,13,1.25,21.3,Road,2.1,1.13,Medium,Medium,0,0
+SHP-00428,SUP-028,Chemical,0.782,12,5.95,16.5,Air,1.9,2.38,Critical,Low,2,0
+SHP-00429,SUP-033,Raw material,0.891,34,2.23,22.5,Road,2.2,2.99,High,Low,4,0
+SHP-00430,SUP-048,Packaging,0.452,15,5.33,6.1,Sea,1.1,6.17,Medium,Medium,0,0
+SHP-00431,SUP-016,Spare part,0.71,21,3.55,19.3,Road,1.8,3.36,Low,Low,2,0
+SHP-00432,SUP-039,Electronic component,0.712,23,3.7,14.3,Road,2.4,5.0,High,Low,5,1
+SHP-00433,SUP-053,Raw material,0.621,23,3.06,40.9,Rail,5.0,3.05,Low,Medium,7,1
+SHP-00434,SUP-035,Spare part,0.533,18,3.89,19.2,Road,1.1,6.23,High,Medium,5,1
+SHP-00435,SUP-027,Spare part,0.876,34,4.48,13.2,Air,3.2,2.56,High,High,12,1
+SHP-00436,SUP-009,Packaging,0.807,20,4.57,7.0,Rail,2.0,4.19,Medium,Low,4,0
+SHP-00437,SUP-015,Packaging,0.933,12,3.53,28.4,Road,4.1,1.51,Medium,Low,2,0
+SHP-00438,SUP-057,Raw material,0.874,14,3.33,15.2,Rail,6.0,2.5,Low,Medium,3,0
+SHP-00439,SUP-033,Chemical,0.805,7,2.39,11.7,Sea,2.8,7.44,Low,Medium,10,1
+SHP-00440,SUP-019,Electronic component,0.754,19,2.64,20.7,Sea,1.2,3.09,Medium,Low,2,1
+SHP-00441,SUP-026,Raw material,0.817,22,2.9,23.2,Rail,0.8,4.32,Critical,Medium,4,0
+SHP-00442,SUP-035,Chemical,0.574,22,7.03,23.1,Road,1.4,5.83,Medium,Low,9,1
+SHP-00443,SUP-033,Spare part,0.86,21,2.97,18.2,Road,1.5,3.43,High,High,14,0
+SHP-00444,SUP-042,Spare part,0.761,15,2.25,19.3,Sea,1.3,4.27,High,High,5,1
+SHP-00445,SUP-016,Raw material,0.734,16,2.17,19.9,Air,2.5,2.5,Low,Medium,4,0
+SHP-00446,SUP-039,Raw material,0.693,16,5.46,20.7,Rail,3.9,2.41,Low,High,2,0
+SHP-00447,SUP-027,Spare part,0.917,26,5.63,21.4,Sea,0.4,1.13,Medium,High,17,1
+SHP-00448,SUP-057,Spare part,0.824,6,1.45,26.8,Road,2.1,3.25,High,Low,1,0
+SHP-00449,SUP-010,Packaging,0.693,13,5.54,18.5,Air,1.1,3.36,Medium,Low,6,1
+SHP-00450,SUP-009,Packaging,0.846,10,3.47,11.5,Road,2.2,3.02,High,Medium,5,1
+SHP-00451,SUP-028,Electronic component,0.815,40,2.04,16.8,Road,2.3,1.53,Critical,Low,3,0
+SHP-00452,SUP-031,Electronic component,0.72,28,3.97,24.0,Rail,4.3,2.39,High,Low,18,1
+SHP-00453,SUP-042,Raw material,0.734,13,2.35,3.7,Road,0.8,4.67,Critical,Low,4,1
+SHP-00454,SUP-025,Raw material,0.694,8,3.51,3.8,Sea,1.2,3.57,High,High,9,0
+SHP-00455,SUP-055,Raw material,0.757,9,3.4,25.3,Road,1.9,3.16,Critical,Low,4,0
+SHP-00456,SUP-029,Spare part,0.798,26,5.81,30.2,Sea,1.6,2.49,High,Medium,2,0
+SHP-00457,SUP-008,Raw material,0.944,7,1.69,7.9,Air,1.9,1.2,High,Low,13,0
+SHP-00458,SUP-008,Raw material,0.941,16,1.25,18.8,Air,0.5,4.27,High,Low,5,0
+SHP-00459,SUP-059,Packaging,0.657,24,4.64,14.8,Sea,5.4,6.15,Critical,High,6,1
+SHP-00460,SUP-009,Raw material,0.875,9,3.57,15.9,Road,1.4,2.5,Medium,Low,6,1
+SHP-00461,SUP-057,Raw material,0.799,16,2.22,20.4,Road,0.9,2.61,High,Low,8,0
+SHP-00462,SUP-017,Packaging,0.887,13,1.35,7.7,Road,1.9,5.22,Medium,Low,9,0
+SHP-00463,SUP-006,Electronic component,0.633,12,3.19,9.1,Road,2.9,2.86,Critical,Medium,6,1
+SHP-00464,SUP-019,Packaging,0.8,11,5.8,15.6,Sea,7.0,2.23,Medium,Low,10,1
+SHP-00465,SUP-037,Spare part,0.863,25,3.56,16.8,Rail,4.4,3.92,High,Low,0,0
+SHP-00466,SUP-026,Raw material,0.835,31,2.38,9.0,Road,1.6,2.05,High,Low,4,1
+SHP-00467,SUP-048,Spare part,0.512,14,7.28,24.3,Road,6.2,4.24,Critical,Low,8,0
+SHP-00468,SUP-037,Spare part,0.774,19,2.38,14.7,Rail,5.4,1.33,Medium,Low,6,1
+SHP-00469,SUP-025,Spare part,0.6,16,4.36,14.6,Air,0.9,6.51,High,Medium,7,1
+SHP-00470,SUP-039,Packaging,0.737,6,2.31,20.3,Road,8.1,4.36,High,Low,8,1
+SHP-00471,SUP-059,Packaging,0.672,14,6.03,17.0,Sea,1.4,5.43,Critical,Low,2,1
+SHP-00472,SUP-025,Packaging,0.679,6,2.98,24.7,Air,2.3,2.41,Critical,Medium,10,1
+SHP-00473,SUP-010,Chemical,0.619,13,3.42,10.5,Sea,5.7,7.08,High,Medium,3,1
+SHP-00474,SUP-025,Raw material,0.67,16,4.6,6.8,Road,0.4,3.32,High,Low,4,0
+SHP-00475,SUP-051,Spare part,0.899,23,0.78,15.5,Air,1.9,4.53,Low,Low,2,0
+SHP-00476,SUP-014,Packaging,0.821,18,1.61,18.5,Road,2.6,3.22,Critical,Low,11,1
+SHP-00477,SUP-057,Chemical,0.826,25,4.2,8.1,Road,5.1,4.01,Medium,High,10,1
+SHP-00478,SUP-036,Electronic component,0.968,10,0.83,6.9,Air,2.9,2.61,High,Low,9,0
+SHP-00479,SUP-037,Raw material,0.836,29,9.52,19.5,Air,0.4,2.03,High,Low,4,0
+SHP-00480,SUP-020,Packaging,0.64,31,4.44,11.9,Road,7.0,2.19,Medium,Medium,3,0
+SHP-00481,SUP-056,Packaging,0.848,6,1.26,6.4,Sea,2.1,5.0,Medium,Low,0,0
+SHP-00482,SUP-003,Electronic component,0.742,7,7.05,25.7,Road,3.5,1.39,Medium,Low,12,1
+SHP-00483,SUP-018,Electronic component,0.898,16,2.64,12.9,Rail,1.3,3.9,Critical,Low,2,0
+SHP-00484,SUP-026,Raw material,0.819,12,2.66,27.2,Sea,5.3,5.13,Medium,Medium,2,0
+SHP-00485,SUP-029,Packaging,0.736,13,3.76,18.2,Rail,1.4,1.82,Low,Medium,6,0
+SHP-00486,SUP-029,Electronic component,0.743,18,1.99,20.4,Sea,2.0,2.55,High,Medium,2,0
+SHP-00487,SUP-009,Spare part,0.864,25,2.56,16.3,Rail,4.5,1.13,Medium,Medium,5,1
+SHP-00488,SUP-014,Raw material,0.719,10,2.62,1.0,Sea,0.6,2.47,Critical,Low,7,1
+SHP-00489,SUP-006,Electronic component,0.675,27,3.79,8.9,Air,3.5,5.38,Medium,High,4,0
+SHP-00490,SUP-035,Electronic component,0.623,11,3.7,17.0,Air,1.9,5.01,Medium,Medium,0,0
+SHP-00491,SUP-022,Packaging,0.801,43,3.23,20.9,Road,2.9,3.83,Low,High,3,0
+SHP-00492,SUP-034,Electronic component,0.873,30,2.11,3.7,Air,4.3,1.91,Medium,Medium,3,1
+SHP-00493,SUP-036,Packaging,0.948,12,1.35,17.6,Road,1.4,0.37,Medium,Low,3,0
+SHP-00494,SUP-043,Spare part,0.927,8,1.09,9.0,Sea,5.1,0.95,High,Low,6,1
+SHP-00495,SUP-033,Electronic component,0.735,12,2.05,19.9,Road,2.9,2.81,Medium,Medium,5,0
+SHP-00496,SUP-039,Chemical,0.697,11,2.26,17.8,Road,7.8,2.22,Medium,Low,1,0
+SHP-00497,SUP-036,Raw material,0.942,21,0.78,23.9,Sea,4.5,3.71,Medium,Medium,4,1
+SHP-00498,SUP-040,Raw material,0.908,6,3.45,26.5,Road,2.3,5.75,Medium,Low,3,0
+SHP-00499,SUP-037,Electronic component,0.826,7,1.76,21.7,Road,3.1,3.18,Critical,Low,4,0
+SHP-00500,SUP-019,Raw material,0.758,21,2.52,24.9,Air,0.7,1.71,Low,High,6,0
+SHP-00501,SUP-015,Packaging,0.919,11,1.41,15.2,Road,4.5,4.75,Critical,Medium,12,1
+SHP-00502,SUP-048,Packaging,0.535,13,4.33,40.6,Road,1.3,4.28,Medium,Medium,16,1
+SHP-00503,SUP-021,Chemical,0.872,24,3.32,8.2,Rail,3.3,2.39,Low,Low,1,0
+SHP-00504,SUP-033,Packaging,0.846,26,2.29,13.8,Road,7.0,3.43,Medium,Medium,6,1
+SHP-00505,SUP-012,Packaging,0.671,29,5.54,25.2,Road,5.0,2.25,Low,High,5,0
+SHP-00506,SUP-026,Electronic component,0.884,23,1.19,24.0,Road,1.8,1.87,High,Medium,0,0
+SHP-00507,SUP-032,Raw material,0.674,15,5.25,21.9,Road,2.1,3.29,Medium,Medium,1,0
+SHP-00508,SUP-038,Raw material,0.863,14,5.74,23.4,Road,2.7,2.85,Medium,Medium,4,1
+SHP-00509,SUP-032,Packaging,0.7,13,3.69,1.3,Road,5.4,3.83,High,Low,12,1
+SHP-00510,SUP-022,Spare part,0.755,9,2.21,30.7,Air,4.9,3.89,High,Medium,6,0
+SHP-00511,SUP-058,Raw material,0.964,10,2.72,16.4,Air,3.2,1.27,Critical,High,12,1
+SHP-00512,SUP-031,Packaging,0.758,27,3.31,28.0,Road,3.0,1.52,Critical,Medium,8,1
+SHP-00513,SUP-049,Chemical,0.927,11,2.63,1.7,Road,2.9,1.84,High,Low,10,1
+SHP-00514,SUP-045,Spare part,0.839,9,4.44,20.1,Sea,2.6,2.42,High,Medium,1,1
+SHP-00515,SUP-034,Packaging,0.956,28,1.43,13.5,Rail,1.7,0.52,High,Medium,7,0
+SHP-00516,SUP-054,Packaging,0.791,18,2.42,22.6,Road,3.8,2.08,Medium,High,9,0
+SHP-00517,SUP-008,Chemical,0.825,5,10.8,20.5,Rail,3.9,2.89,High,Medium,4,1
+SHP-00518,SUP-056,Spare part,0.801,35,3.88,20.9,Road,4.4,2.18,Low,Low,8,1
+SHP-00519,SUP-052,Raw material,0.835,33,4.93,9.5,Sea,4.3,2.78,High,Low,3,1
+SHP-00520,SUP-031,Spare part,0.734,9,5.02,17.5,Sea,1.3,2.47,Critical,Medium,0,0
+SHP-00521,SUP-045,Raw material,0.909,15,4.45,16.6,Sea,0.2,3.26,Low,Low,2,0
+SHP-00522,SUP-032,Spare part,0.766,10,3.81,22.0,Road,1.2,1.93,High,Medium,0,0
+SHP-00523,SUP-017,Raw material,0.903,10,4.14,25.9,Road,2.6,2.26,Critical,High,5,0
+SHP-00524,SUP-048,Raw material,0.493,13,4.38,19.2,Road,1.7,4.37,Medium,Medium,2,0
+SHP-00525,SUP-015,Raw material,0.994,22,0.24,7.8,Road,1.7,3.35,High,Low,6,0
+SHP-00526,SUP-019,Electronic component,0.736,22,2.47,18.9,Road,1.9,2.67,Critical,Medium,8,0
+SHP-00527,SUP-032,Electronic component,0.673,20,3.69,38.9,Air,3.7,6.87,Critical,Medium,12,1
+SHP-00528,SUP-051,Raw material,0.844,14,2.33,31.2,Road,0.4,5.88,Low,Low,5,0
+SHP-00529,SUP-024,Electronic component,0.972,22,1.82,1.0,Sea,4.0,0.95,Medium,Medium,3,0
+SHP-00530,SUP-030,Electronic component,0.62,9,3.44,18.5,Road,4.0,3.63,High,Medium,8,1
+SHP-00531,SUP-003,Chemical,0.676,18,2.36,25.5,Road,5.1,2.17,Medium,High,3,0
+SHP-00532,SUP-007,Spare part,0.808,16,2.44,16.5,Sea,12.6,3.47,Medium,Low,3,1
+SHP-00533,SUP-004,Packaging,0.781,14,1.85,14.3,Air,0.2,2.26,Low,Low,3,0
+SHP-00534,SUP-005,Raw material,0.714,18,3.56,15.9,Road,3.1,3.36,Low,Medium,14,1
+SHP-00535,SUP-053,Electronic component,0.667,5,4.6,22.4,Rail,4.4,3.1,High,Low,0,0
+SHP-00536,SUP-051,Spare part,0.825,10,2.3,8.8,Road,1.2,10.03,High,Low,7,0
+SHP-00537,SUP-050,Raw material,0.844,21,1.55,27.5,Road,1.8,2.36,High,Medium,0,0
+SHP-00538,SUP-004,Electronic component,0.79,16,3.17,17.6,Rail,2.2,2.52,High,Low,13,1
+SHP-00539,SUP-005,Spare part,0.694,7,12.0,10.5,Road,3.3,5.01,Medium,Medium,9,1
+SHP-00540,SUP-017,Spare part,0.899,16,3.2,27.0,Rail,4.6,4.33,Medium,High,13,1
+SHP-00541,SUP-034,Electronic component,0.999,12,2.65,5.6,Road,1.6,2.15,Low,Medium,9,0
+SHP-00542,SUP-021,Packaging,0.895,27,1.7,13.6,Air,2.9,4.43,Medium,Medium,9,0
+SHP-00543,SUP-030,Electronic component,0.626,9,3.3,13.4,Sea,6.1,10.03,Medium,Medium,2,0
+SHP-00544,SUP-011,Chemical,0.819,9,5.08,35.2,Road,2.1,2.28,Low,Low,7,0
+SHP-00545,SUP-044,Raw material,0.914,19,0.64,12.5,Road,1.0,1.05,Low,Low,0,0
+SHP-00546,SUP-019,Raw material,0.735,15,2.61,1.0,Rail,0.9,3.7,Low,Medium,6,0
+SHP-00547,SUP-004,Packaging,0.757,14,7.31,13.3,Sea,1.1,4.87,High,Low,10,1
+SHP-00548,SUP-045,Raw material,0.927,43,1.99,21.6,Air,6.9,5.32,High,Low,5,1
+SHP-00549,SUP-055,Packaging,0.673,22,2.52,24.3,Air,8.0,4.32,Critical,Low,6,1
+SHP-00550,SUP-001,Electronic component,0.781,14,3.86,36.2,Road,6.6,2.9,High,High,8,1
+SHP-00551,SUP-027,Spare part,0.869,7,2.0,29.3,Road,1.7,1.57,High,Low,4,0
+SHP-00552,SUP-050,Chemical,0.866,13,1.1,19.5,Rail,6.7,4.92,Low,Medium,1,0
+SHP-00553,SUP-043,Electronic component,0.844,8,3.06,10.9,Road,1.7,3.01,High,Low,1,0
+SHP-00554,SUP-052,Chemical,0.851,10,2.77,31.0,Air,4.6,1.07,Low,Medium,10,0
+SHP-00555,SUP-025,Raw material,0.714,10,3.63,15.1,Road,1.4,7.88,Medium,Low,8,1
+SHP-00556,SUP-023,Electronic component,0.806,26,3.82,12.7,Road,1.6,1.62,Medium,Low,0,0
+SHP-00557,SUP-043,Raw material,0.83,8,1.61,14.7,Rail,2.9,4.55,Medium,Medium,8,1
+SHP-00558,SUP-010,Spare part,0.694,25,4.28,8.0,Rail,2.9,3.62,Medium,Medium,11,1
+SHP-00559,SUP-015,Spare part,0.913,20,2.44,14.3,Rail,3.1,0.79,High,Low,7,0
+SHP-00560,SUP-037,Spare part,0.794,20,5.2,16.1,Rail,3.4,2.68,Critical,Medium,6,1
+SHP-00561,SUP-041,Spare part,0.46,10,4.53,23.8,Sea,2.8,4.08,High,Medium,6,1
+SHP-00562,SUP-008,Spare part,0.903,23,4.95,14.9,Sea,2.0,0.93,High,Low,4,1
+SHP-00563,SUP-031,Raw material,0.744,9,4.91,7.9,Sea,2.3,3.79,High,Medium,17,1
+SHP-00564,SUP-022,Spare part,0.816,32,2.71,5.2,Air,3.9,4.27,Low,Low,3,0
+SHP-00565,SUP-031,Packaging,0.734,27,3.49,19.7,Air,2.7,3.06,High,Medium,4,0
+SHP-00566,SUP-058,Electronic component,0.999,34,1.6,18.6,Rail,2.3,1.36,High,Low,10,1
+SHP-00567,SUP-005,Packaging,0.782,16,4.47,13.6,Rail,1.2,3.74,Medium,Medium,5,1
+SHP-00568,SUP-060,Electronic component,0.875,15,2.1,14.3,Road,3.1,0.69,Medium,Low,5,0
+SHP-00569,SUP-027,Electronic component,0.871,13,4.65,21.1,Rail,6.1,1.87,Critical,Medium,9,1
+SHP-00570,SUP-047,Raw material,0.817,43,3.63,29.1,Road,3.4,2.22,High,Medium,13,1
+SHP-00571,SUP-026,Raw material,0.781,22,8.43,11.8,Road,5.5,2.88,Medium,High,5,1
+SHP-00572,SUP-019,Electronic component,0.747,8,2.58,18.7,Sea,2.5,1.68,High,Medium,11,1
+SHP-00573,SUP-047,Spare part,0.867,30,3.66,25.7,Road,2.5,0.89,Medium,High,6,0
+SHP-00574,SUP-042,Packaging,0.725,15,2.25,11.8,Rail,2.8,2.09,Medium,Low,5,1
+SHP-00575,SUP-009,Packaging,0.874,4,2.22,17.9,Rail,4.0,3.11,Medium,Low,0,0
+SHP-00576,SUP-043,Electronic component,0.851,11,3.51,17.7,Road,2.5,2.03,Medium,Low,2,0
+SHP-00577,SUP-046,Electronic component,0.885,27,3.67,7.5,Sea,4.2,1.28,High,Medium,4,0
+SHP-00578,SUP-024,Raw material,0.999,20,1.14,19.3,Road,5.1,5.8,Low,Medium,3,0
+SHP-00579,SUP-056,Spare part,0.82,22,5.33,18.3,Sea,2.1,2.25,High,High,2,0
+SHP-00580,SUP-039,Raw material,0.726,30,6.68,22.4,Sea,1.1,3.16,Medium,Medium,11,1
+SHP-00581,SUP-021,Chemical,0.813,6,2.12,8.5,Road,6.0,5.14,High,Medium,4,1
+SHP-00582,SUP-001,Chemical,0.816,11,2.66,18.1,Road,4.4,2.91,High,Low,4,0
+SHP-00583,SUP-041,Packaging,0.482,16,4.87,29.1,Road,0.6,5.22,High,Low,3,0
+SHP-00584,SUP-013,Spare part,0.818,27,2.24,34.6,Road,2.1,1.79,High,Medium,2,0
+SHP-00585,SUP-046,Electronic component,0.929,9,5.03,28.2,Road,8.0,2.22,Critical,Low,2,0
+SHP-00586,SUP-032,Spare part,0.652,13,6.93,8.6,Sea,3.2,7.05,Medium,Low,3,1
+SHP-00587,SUP-029,Chemical,0.818,16,2.55,21.6,Road,3.1,3.3,High,High,6,0
+SHP-00588,SUP-010,Chemical,0.654,11,5.14,14.1,Sea,1.7,3.87,High,High,7,1
+SHP-00589,SUP-043,Packaging,0.876,16,4.58,20.3,Road,0.9,2.08,Medium,Medium,1,0
+SHP-00590,SUP-010,Spare part,0.648,15,4.46,11.8,Sea,3.8,2.3,Medium,Low,1,1
+SHP-00591,SUP-026,Spare part,0.822,12,2.44,4.3,Road,1.0,4.79,Medium,High,7,1
+SHP-00592,SUP-051,Electronic component,0.853,23,1.78,15.2,Rail,3.6,2.42,Medium,Low,4,0
+SHP-00593,SUP-056,Chemical,0.848,21,3.99,23.8,Rail,2.9,1.75,Medium,Medium,8,0
+SHP-00594,SUP-060,Chemical,0.998,24,0.38,20.3,Road,3.5,0.49,Medium,Low,0,0
+SHP-00595,SUP-058,Electronic component,0.955,25,1.54,21.2,Sea,2.7,2.45,High,High,0,0
+SHP-00596,SUP-034,Spare part,0.978,33,1.18,19.7,Road,3.1,0.74,Medium,High,8,1
+SHP-00597,SUP-013,Electronic component,0.81,7,1.67,21.2,Rail,5.1,4.87,High,Medium,0,0
+SHP-00598,SUP-051,Packaging,0.907,8,2.13,22.2,Rail,2.0,1.51,Medium,Low,2,0
+SHP-00599,SUP-049,Raw material,0.862,22,2.31,15.8,Rail,4.0,2.59,High,Medium,11,1
+SHP-00600,SUP-060,Raw material,0.999,13,0.6,18.7,Road,5.6,2.36,Low,Low,5,0
+SHP-00601,SUP-040,Spare part,0.927,12,4.91,31.9,Road,2.8,2.52,Medium,High,6,0
+SHP-00602,SUP-009,Electronic component,0.832,11,4.12,19.1,Road,4.5,4.19,Low,Low,10,1
+SHP-00603,SUP-031,Electronic component,0.802,24,3.04,18.3,Road,1.6,2.12,High,Low,7,1
+SHP-00604,SUP-027,Raw material,0.917,41,3.89,18.8,Road,2.0,2.21,Medium,Medium,3,0
+SHP-00605,SUP-051,Electronic component,0.863,25,4.9,16.3,Sea,1.3,3.42,Critical,Medium,0,0
+SHP-00606,SUP-024,Chemical,0.957,12,4.86,14.5,Rail,2.3,5.18,Medium,High,11,1
+SHP-00607,SUP-020,Spare part,0.707,24,2.85,19.7,Air,2.0,4.65,High,Low,7,1
+SHP-00608,SUP-005,Raw material,0.732,7,5.18,14.0,Road,7.6,4.95,Medium,High,7,1
+SHP-00609,SUP-051,Packaging,0.842,4,2.45,16.8,Road,1.2,2.17,High,Low,8,1
+SHP-00610,SUP-046,Electronic component,0.958,14,2.23,11.7,Rail,3.0,2.6,Medium,Low,1,0
+SHP-00611,SUP-003,Packaging,0.719,6,2.81,18.9,Road,1.0,5.89,Medium,Medium,3,0
+SHP-00612,SUP-027,Electronic component,0.85,13,2.64,22.7,Road,2.7,2.48,Medium,Low,3,0
+SHP-00613,SUP-029,Electronic component,0.806,17,4.71,16.3,Rail,3.9,3.37,Low,Medium,7,1
+SHP-00614,SUP-029,Electronic component,0.809,45,2.79,1.9,Rail,4.3,1.33,Low,Low,7,1
+SHP-00615,SUP-056,Packaging,0.862,28,1.58,22.7,Sea,1.7,3.62,Critical,Low,16,1
+SHP-00616,SUP-010,Packaging,0.691,6,8.22,19.0,Road,1.3,3.67,Medium,Medium,7,0
+SHP-00617,SUP-019,Electronic component,0.734,7,2.63,10.1,Rail,6.9,4.12,Low,Low,9,1
+SHP-00618,SUP-011,Chemical,0.804,11,1.57,24.2,Road,2.4,2.38,Critical,Medium,6,0
+SHP-00619,SUP-015,Chemical,0.868,37,1.84,6.8,Road,1.1,0.94,Low,Medium,3,0
+SHP-00620,SUP-055,Electronic component,0.677,6,6.06,26.4,Air,5.9,4.64,Medium,Low,1,0
+SHP-00621,SUP-057,Chemical,0.829,11,1.91,17.5,Road,1.1,1.84,High,Medium,1,0
+SHP-00622,SUP-003,Spare part,0.709,11,2.48,1.0,Rail,5.1,1.87,Critical,Low,11,1
+SHP-00623,SUP-038,Raw material,0.867,19,2.71,19.4,Road,0.6,2.68,High,Low,1,0
+SHP-00624,SUP-014,Packaging,0.688,24,7.63,14.8,Road,0.7,6.96,Medium,Low,8,1
+SHP-00625,SUP-012,Electronic component,0.679,21,4.64,13.5,Sea,1.7,2.46,Critical,High,6,0
+SHP-00626,SUP-018,Chemical,0.993,18,0.41,12.1,Road,2.3,1.06,Low,Medium,0,0
+SHP-00627,SUP-012,Raw material,0.7,7,9.75,17.0,Sea,5.1,4.63,Critical,Medium,9,1
+SHP-00628,SUP-030,Packaging,0.652,17,4.6,14.1,Road,0.9,3.26,Critical,High,8,1
+SHP-00629,SUP-060,Raw material,0.927,30,4.02,3.1,Sea,3.1,3.38,Critical,Low,9,1
+SHP-00630,SUP-036,Packaging,0.999,35,0.27,28.2,Road,2.7,1.45,Medium,High,6,1
+SHP-00631,SUP-044,Spare part,0.923,19,7.27,16.0,Road,2.3,1.65,Low,Medium,9,1
+SHP-00632,SUP-030,Electronic component,0.649,6,3.57,12.1,Sea,5.3,2.65,High,High,6,0
+SHP-00633,SUP-001,Spare part,0.832,19,1.41,9.0,Road,2.5,3.11,Medium,High,19,0
+SHP-00634,SUP-006,Spare part,0.707,15,4.02,24.2,Road,2.6,2.36,High,High,8,1
+SHP-00635,SUP-017,Spare part,0.876,7,4.37,7.6,Sea,3.7,1.83,Critical,Low,5,1
+SHP-00636,SUP-015,Raw material,0.878,9,3.56,19.1,Rail,1.5,4.49,High,Medium,5,0
+SHP-00637,SUP-051,Chemical,0.817,10,3.94,13.3,Air,3.0,7.89,Medium,High,8,0
+SHP-00638,SUP-051,Raw material,0.847,22,3.58,13.8,Air,2.8,3.25,Medium,Medium,7,1
+SHP-00639,SUP-052,Electronic component,0.8,34,3.21,9.2,Sea,5.0,4.98,Low,Low,23,1
+SHP-00640,SUP-039,Spare part,0.696,21,2.39,13.0,Sea,2.0,2.85,Medium,High,16,1
+SHP-00641,SUP-034,Chemical,0.999,23,1.34,18.1,Rail,3.0,1.48,Low,Low,0,0
+SHP-00642,SUP-039,Packaging,0.705,15,3.23,19.9,Road,3.1,3.56,High,Medium,2,0
+SHP-00643,SUP-025,Electronic component,0.751,12,6.31,11.7,Road,2.8,2.24,High,Medium,8,0
+SHP-00644,SUP-041,Chemical,0.464,21,7.55,17.3,Rail,2.0,3.94,High,Low,7,1
+SHP-00645,SUP-048,Chemical,0.533,18,4.29,25.1,Sea,4.5,5.28,Medium,Medium,12,1
+SHP-00646,SUP-046,Electronic component,0.921,10,3.62,4.7,Rail,3.3,2.22,High,Low,10,1
+SHP-00647,SUP-037,Spare part,0.884,18,2.33,17.9,Road,1.6,2.19,High,Medium,4,1
+SHP-00648,SUP-004,Raw material,0.745,16,1.99,10.4,Road,0.8,2.82,Critical,High,5,0
+SHP-00649,SUP-044,Raw material,0.898,13,3.5,9.6,Rail,0.4,1.23,High,Low,0,0
+SHP-00650,SUP-022,Packaging,0.826,12,1.74,20.1,Sea,3.2,2.9,High,Medium,6,1
+SHP-00651,SUP-045,Spare part,0.929,19,1.01,13.6,Road,1.2,1.35,Medium,Low,1,0
+SHP-00652,SUP-033,Raw material,0.834,12,1.95,8.3,Rail,0.5,1.2,Medium,High,8,1
+SHP-00653,SUP-053,Raw material,0.59,41,5.71,28.6,Sea,1.1,2.68,Critical,High,1,1
+SHP-00654,SUP-021,Raw material,0.831,20,5.02,25.4,Sea,2.8,2.41,Medium,Low,3,0
+SHP-00655,SUP-056,Spare part,0.789,19,5.26,2.5,Road,1.2,3.83,Medium,Medium,6,1
+SHP-00656,SUP-051,Raw material,0.767,14,1.8,6.2,Sea,2.8,4.47,Medium,Medium,5,0
+SHP-00657,SUP-020,Packaging,0.719,13,2.72,22.7,Rail,1.4,1.9,Medium,Medium,1,0
+SHP-00658,SUP-029,Spare part,0.816,6,1.91,15.7,Sea,2.2,3.5,High,Medium,5,0
+SHP-00659,SUP-032,Raw material,0.701,11,4.93,30.0,Road,2.3,7.12,High,Medium,10,1
+SHP-00660,SUP-047,Packaging,0.744,6,2.56,22.9,Rail,3.6,4.7,Medium,Medium,0,0
+SHP-00661,SUP-042,Packaging,0.756,6,3.12,20.4,Air,3.7,3.19,Medium,Low,4,0
+SHP-00662,SUP-052,Chemical,0.798,8,4.46,9.8,Road,3.0,3.1,Critical,Low,8,0
+SHP-00663,SUP-023,Electronic component,0.845,28,2.76,21.9,Rail,1.8,2.7,Medium,High,4,1
+SHP-00664,SUP-031,Electronic component,0.673,28,4.44,7.8,Rail,5.6,2.81,Critical,Low,8,1
+SHP-00665,SUP-026,Raw material,0.829,11,2.57,28.4,Rail,1.6,4.4,Medium,Medium,3,0
+SHP-00666,SUP-055,Chemical,0.794,7,4.98,21.4,Road,1.0,1.81,High,Low,7,1
+SHP-00667,SUP-019,Chemical,0.76,13,5.5,11.4,Rail,3.5,3.25,High,High,5,0
+SHP-00668,SUP-036,Raw material,0.999,22,2.51,24.4,Road,2.8,0.37,High,Medium,6,0
+SHP-00669,SUP-008,Electronic component,0.895,26,4.57,35.9,Sea,2.5,4.29,Low,Low,6,0
+SHP-00670,SUP-052,Spare part,0.816,17,10.79,16.3,Sea,0.6,2.91,Critical,Low,4,0
+SHP-00671,SUP-024,Raw material,0.984,19,3.12,22.4,Road,0.4,0.54,High,Medium,0,0
+SHP-00672,SUP-021,Electronic component,0.851,18,2.61,14.5,Road,2.6,5.4,High,High,3,0
+SHP-00673,SUP-035,Packaging,0.627,6,4.81,18.7,Road,0.9,3.53,Medium,Medium,2,0
+SHP-00674,SUP-030,Electronic component,0.591,8,7.0,5.9,Rail,5.0,2.61,Low,Medium,6,0
+SHP-00675,SUP-051,Raw material,0.84,35,2.22,18.0,Sea,1.7,6.76,Medium,Medium,7,1
+SHP-00676,SUP-032,Electronic component,0.707,17,3.06,18.3,Rail,2.3,2.92,Medium,Low,10,1
+SHP-00677,SUP-032,Raw material,0.679,5,4.41,32.4,Road,7.1,2.51,Medium,Medium,9,0
+SHP-00678,SUP-007,Packaging,0.726,20,3.45,3.6,Road,0.2,3.5,High,Low,16,1
+SHP-00679,SUP-002,Chemical,0.63,10,3.21,15.8,Road,3.0,2.48,Medium,Low,4,0
+SHP-00680,SUP-024,Packaging,0.919,27,2.46,28.3,Sea,0.4,1.59,Low,Medium,3,1
+SHP-00681,SUP-060,Raw material,0.963,25,5.05,16.1,Air,5.2,4.47,Low,High,1,0
+SHP-00682,SUP-056,Spare part,0.8,22,3.84,16.6,Rail,0.5,2.48,Medium,High,0,0
+SHP-00683,SUP-038,Raw material,0.894,17,1.23,11.3,Road,2.9,3.0,Medium,High,11,1
+SHP-00684,SUP-038,Chemical,0.842,30,3.87,10.5,Sea,3.4,5.21,High,Medium,7,1
+SHP-00685,SUP-024,Electronic component,0.981,31,1.39,3.4,Road,1.2,1.54,Low,Low,7,0
+SHP-00686,SUP-011,Chemical,0.796,10,8.77,13.0,Sea,3.7,1.9,Critical,Medium,6,1
+SHP-00687,SUP-001,Raw material,0.731,21,4.47,10.1,Sea,1.4,4.16,Medium,High,16,1
+SHP-00688,SUP-021,Raw material,0.857,12,1.91,18.9,Rail,3.3,1.26,Low,Medium,5,0
+SHP-00689,SUP-019,Electronic component,0.79,9,4.41,11.7,Sea,2.1,1.84,Critical,Medium,8,1
+SHP-00690,SUP-012,Raw material,0.734,31,3.87,14.2,Road,2.9,1.77,Medium,Medium,8,1
+SHP-00691,SUP-016,Raw material,0.666,23,6.79,14.4,Air,2.0,5.87,Medium,Medium,3,0
+SHP-00692,SUP-002,Chemical,0.669,18,3.32,17.6,Road,3.7,3.53,Critical,High,8,1
+SHP-00693,SUP-037,Spare part,0.776,10,4.15,13.8,Rail,3.3,4.01,Critical,Medium,0,0
+SHP-00694,SUP-056,Raw material,0.837,32,1.4,9.5,Road,1.8,1.65,High,Medium,3,1
+SHP-00695,SUP-042,Spare part,0.833,9,2.99,18.7,Road,1.6,3.24,Low,Low,11,0
+SHP-00696,SUP-027,Chemical,0.887,8,1.26,26.5,Road,4.0,3.03,High,Medium,3,0
+SHP-00697,SUP-026,Spare part,0.845,16,3.04,19.0,Road,1.4,6.71,Critical,Low,12,1
+SHP-00698,SUP-019,Chemical,0.763,22,4.0,13.1,Rail,2.7,3.9,Critical,High,6,0
+SHP-00699,SUP-009,Packaging,0.893,13,3.25,17.0,Rail,5.9,3.84,Low,Medium,5,0
+SHP-00700,SUP-036,Packaging,0.913,45,1.61,1.6,Road,2.2,2.43,Medium,Medium,4,1
+SHP-00701,SUP-034,Packaging,0.901,17,2.56,16.9,Sea,3.7,0.57,Medium,Low,7,0
+SHP-00702,SUP-001,Spare part,0.758,12,5.73,14.8,Sea,1.2,3.46,Low,Medium,10,1
+SHP-00703,SUP-025,Raw material,0.646,12,8.38,10.5,Road,2.9,3.33,High,Medium,13,1
+SHP-00704,SUP-017,Electronic component,0.932,37,2.4,12.0,Road,2.7,1.84,Medium,Low,12,1
+SHP-00705,SUP-011,Raw material,0.826,15,5.34,14.7,Air,1.6,2.09,Medium,High,8,1
+SHP-00706,SUP-043,Spare part,0.816,31,1.97,25.9,Air,0.3,2.42,Low,Low,4,0
+SHP-00707,SUP-032,Electronic component,0.657,6,3.57,26.7,Road,1.7,2.75,Medium,Medium,1,0
+SHP-00708,SUP-039,Packaging,0.613,27,4.82,10.6,Air,7.4,5.02,Low,Low,13,1
+SHP-00709,SUP-043,Spare part,0.875,10,2.42,13.9,Road,2.0,1.35,Medium,Medium,6,0
+SHP-00710,SUP-059,Spare part,0.664,23,3.76,14.1,Road,2.2,7.1,Low,Medium,13,1
+SHP-00711,SUP-049,Raw material,0.902,10,4.49,24.5,Air,4.1,3.39,Critical,High,7,1
+SHP-00712,SUP-038,Chemical,0.92,13,1.13,19.2,Air,3.5,4.07,Low,Low,4,0
+SHP-00713,SUP-053,Spare part,0.677,9,2.89,18.7,Sea,1.6,2.39,High,High,0,0
+SHP-00714,SUP-029,Raw material,0.771,24,1.99,22.3,Road,1.6,2.3,Medium,Medium,1,0
+SHP-00715,SUP-060,Chemical,0.901,26,2.86,13.2,Road,1.6,2.43,Low,Low,3,0
+SHP-00716,SUP-046,Electronic component,0.931,11,1.75,28.9,Road,3.9,2.14,Medium,Low,7,1
+SHP-00717,SUP-040,Packaging,0.899,7,4.23,18.0,Road,3.1,3.41,Low,Low,2,0
+SHP-00718,SUP-055,Packaging,0.745,31,3.8,11.2,Road,2.2,3.08,Low,High,4,0
+SHP-00719,SUP-031,Raw material,0.759,11,2.67,16.2,Rail,2.0,6.82,Medium,Low,7,1
+SHP-00720,SUP-044,Raw material,0.887,15,1.62,27.9,Rail,3.2,1.36,High,Medium,4,0
+SHP-00721,SUP-018,Raw material,0.999,10,1.47,14.6,Air,0.8,0.65,Low,Medium,5,0
+SHP-00722,SUP-058,Raw material,0.922,23,1.02,25.6,Road,2.8,1.5,Medium,High,5,0
+SHP-00723,SUP-038,Packaging,0.908,23,4.51,13.0,Road,6.1,1.96,High,Medium,10,1
+SHP-00724,SUP-047,Electronic component,0.764,33,2.85,11.9,Air,2.1,5.07,Medium,Medium,6,1
+SHP-00725,SUP-028,Raw material,0.784,27,1.81,23.3,Road,1.8,3.43,Medium,Low,2,0
+SHP-00726,SUP-053,Chemical,0.688,26,6.66,11.0,Sea,5.8,1.67,Low,High,4,0
+SHP-00727,SUP-005,Chemical,0.73,15,3.37,24.6,Road,3.0,1.48,Medium,Low,1,0
+SHP-00728,SUP-007,Packaging,0.757,14,4.46,20.8,Rail,3.9,2.83,Medium,Low,5,1
+SHP-00729,SUP-031,Spare part,0.733,22,2.87,11.0,Sea,2.9,2.6,Critical,High,2,0
+SHP-00730,SUP-044,Electronic component,0.924,15,5.12,17.4,Rail,3.9,2.03,Critical,Low,8,1
+SHP-00731,SUP-049,Spare part,0.964,28,0.97,13.6,Rail,1.2,1.68,Critical,Low,2,0
+SHP-00732,SUP-027,Raw material,0.874,9,2.14,20.8,Air,1.2,5.71,Medium,Medium,14,0
+SHP-00733,SUP-039,Chemical,0.647,6,2.66,33.1,Road,4.3,5.26,Low,Low,6,0
+SHP-00734,SUP-034,Spare part,0.932,21,4.98,15.0,Air,0.6,1.5,Medium,Low,1,0
+SHP-00735,SUP-058,Spare part,0.975,12,1.05,22.3,Sea,1.9,1.9,Medium,Medium,3,0
+SHP-00736,SUP-040,Packaging,0.893,9,2.95,18.2,Sea,3.2,1.94,Low,Medium,3,0
+SHP-00737,SUP-026,Packaging,0.787,44,3.96,18.2,Rail,1.8,1.28,Low,Medium,4,1
+SHP-00738,SUP-059,Electronic component,0.645,16,6.45,16.7,Road,2.8,2.98,Medium,Low,6,1
+SHP-00739,SUP-007,Packaging,0.707,8,4.12,11.1,Sea,4.0,2.68,Medium,Medium,5,0
+SHP-00740,SUP-060,Chemical,0.963,11,1.83,20.7,Rail,6.2,1.19,Medium,High,4,0
+SHP-00741,SUP-010,Spare part,0.617,14,6.34,15.7,Road,9.4,3.09,High,Low,2,0
+SHP-00742,SUP-018,Electronic component,0.931,21,2.92,10.8,Road,5.9,1.77,Medium,Low,3,0
+SHP-00743,SUP-050,Raw material,0.827,11,2.57,26.1,Road,1.5,3.36,Critical,Low,1,0
+SHP-00744,SUP-045,Packaging,0.922,15,5.21,18.8,Rail,1.0,1.46,Medium,Medium,3,0
+SHP-00745,SUP-059,Raw material,0.699,18,4.71,16.2,Road,1.5,5.8,High,Low,8,1
+SHP-00746,SUP-045,Raw material,0.89,20,1.2,28.7,Road,3.2,1.34,Medium,Medium,4,0
+SHP-00747,SUP-039,Electronic component,0.696,15,7.43,3.3,Road,2.5,5.33,Medium,High,7,0
+SHP-00748,SUP-021,Chemical,0.884,37,1.78,28.2,Sea,2.1,2.79,Low,Low,7,1
+SHP-00749,SUP-001,Raw material,0.722,23,5.89,11.0,Road,5.9,1.99,Low,Medium,10,1
+SHP-00750,SUP-008,Raw material,0.85,22,1.36,19.7,Road,1.6,2.15,High,Low,3,0
+SHP-00751,SUP-018,Raw material,0.921,22,4.19,13.3,Rail,3.0,5.6,Medium,Low,10,1
+SHP-00752,SUP-003,Spare part,0.69,28,2.63,10.6,Road,3.0,2.35,Low,Medium,7,1
+SHP-00753,SUP-031,Chemical,0.684,18,4.24,28.5,Sea,1.1,6.89,Critical,Medium,12,1
+SHP-00754,SUP-047,Raw material,0.829,9,3.74,32.8,Sea,5.7,3.4,Low,High,8,0
+SHP-00755,SUP-058,Raw material,0.981,20,1.51,16.2,Road,0.8,2.34,High,Medium,4,0
+SHP-00756,SUP-030,Packaging,0.583,21,4.65,20.7,Rail,0.5,4.52,High,Low,10,1
+SHP-00757,SUP-053,Electronic component,0.636,30,3.14,18.5,Road,2.3,3.19,Medium,Medium,2,1
+SHP-00758,SUP-060,Packaging,0.968,9,3.58,31.8,Road,1.1,0.99,Medium,Low,1,0
+SHP-00759,SUP-052,Electronic component,0.816,10,3.4,1.1,Road,5.9,2.76,Low,High,6,1
+SHP-00760,SUP-028,Spare part,0.817,16,2.0,21.0,Road,2.7,3.22,High,Medium,0,0
+SHP-00761,SUP-020,Electronic component,0.664,22,4.54,12.2,Road,2.2,4.31,Medium,Low,8,1
+SHP-00762,SUP-059,Packaging,0.626,8,4.86,1.0,Rail,0.5,4.43,Medium,Medium,3,1
+SHP-00763,SUP-015,Raw material,0.9,9,2.51,15.1,Road,2.9,3.54,Medium,Medium,4,1
+SHP-00764,SUP-025,Spare part,0.707,25,2.11,32.8,Road,1.7,8.15,Critical,Medium,4,0
+SHP-00765,SUP-005,Spare part,0.662,8,3.57,12.8,Rail,3.2,3.85,High,Low,5,1
+SHP-00766,SUP-048,Chemical,0.483,10,6.93,24.3,Rail,3.5,6.73,Critical,Low,12,1
+SHP-00767,SUP-039,Electronic component,0.751,25,4.4,27.6,Road,1.9,3.95,High,Low,2,0
+SHP-00768,SUP-006,Raw material,0.648,22,5.05,17.9,Road,3.5,8.92,High,Low,5,1
+SHP-00769,SUP-014,Chemical,0.811,11,3.42,19.0,Road,1.5,2.88,Medium,Medium,6,0
+SHP-00770,SUP-034,Chemical,0.935,21,4.06,4.3,Road,2.5,2.1,Critical,Low,2,0
+SHP-00771,SUP-033,Raw material,0.828,19,2.17,12.3,Sea,1.9,4.83,Medium,Low,4,0
+SHP-00772,SUP-049,Electronic component,0.86,15,1.75,25.3,Sea,2.9,4.67,Medium,Medium,0,0
+SHP-00773,SUP-016,Electronic component,0.591,13,9.16,18.5,Road,1.4,3.5,High,Low,12,1
+SHP-00774,SUP-056,Spare part,0.872,20,1.76,20.9,Road,4.9,3.27,High,High,3,0
+SHP-00775,SUP-027,Chemical,0.848,8,1.48,19.1,Air,1.9,3.82,Low,Medium,4,0
+SHP-00776,SUP-050,Packaging,0.836,20,2.5,35.5,Air,0.4,3.76,Medium,Low,3,0
+SHP-00777,SUP-015,Packaging,0.85,18,2.92,14.6,Road,2.7,3.19,Medium,Medium,10,1
+SHP-00778,SUP-003,Raw material,0.663,18,5.99,30.8,Road,7.3,2.02,Critical,Low,11,1
+SHP-00779,SUP-004,Electronic component,0.764,10,2.86,19.1,Rail,1.1,4.15,Medium,High,6,0
+SHP-00780,SUP-023,Raw material,0.746,31,2.97,31.6,Rail,4.0,4.34,High,Medium,2,0
+SHP-00781,SUP-058,Chemical,0.969,11,1.94,8.2,Road,3.0,2.67,Medium,Medium,5,0
+SHP-00782,SUP-003,Electronic component,0.728,12,2.92,19.5,Road,1.5,2.7,High,High,11,1
+SHP-00783,SUP-023,Electronic component,0.783,15,1.83,14.9,Road,2.7,5.94,Low,High,4,0
+SHP-00784,SUP-007,Raw material,0.736,22,2.3,19.1,Road,6.2,2.14,Critical,High,3,0
+SHP-00785,SUP-056,Raw material,0.894,18,5.14,27.8,Rail,5.3,4.55,Medium,Low,13,1
+SHP-00786,SUP-041,Packaging,0.423,7,7.09,21.0,Air,10.5,3.69,Medium,Low,6,1
+SHP-00787,SUP-046,Raw material,0.907,16,2.32,27.8,Rail,3.6,4.15,Medium,Medium,3,1
+SHP-00788,SUP-043,Raw material,0.923,17,3.19,12.6,Road,1.4,1.23,Medium,Medium,0,0
+SHP-00789,SUP-040,Chemical,0.924,31,3.66,11.4,Road,4.8,3.92,Medium,Medium,4,0
+SHP-00790,SUP-047,Electronic component,0.773,14,2.5,18.1,Sea,2.0,6.73,High,Medium,7,1
+SHP-00791,SUP-001,Electronic component,0.74,21,2.4,17.7,Rail,2.8,6.91,Critical,Low,3,0
+SHP-00792,SUP-052,Electronic component,0.852,45,5.1,16.5,Road,2.0,5.54,High,Low,6,1
+SHP-00793,SUP-045,Chemical,0.913,28,0.7,10.3,Road,4.4,2.36,High,Medium,4,1
+SHP-00794,SUP-045,Electronic component,0.902,9,3.37,27.6,Sea,4.2,1.65,Medium,Low,5,1
+SHP-00795,SUP-024,Chemical,0.949,23,2.36,15.1,Sea,2.1,1.95,High,Medium,4,0
+SHP-00796,SUP-049,Spare part,0.903,20,4.44,29.4,Sea,4.6,4.3,Critical,Medium,4,0
+SHP-00797,SUP-023,Packaging,0.782,13,4.29,18.1,Rail,5.7,4.03,Medium,Medium,4,0
+SHP-00798,SUP-003,Electronic component,0.703,23,4.71,23.2,Rail,2.2,9.07,Critical,Medium,10,1
+SHP-00799,SUP-055,Chemical,0.733,9,2.52,22.5,Rail,3.7,2.59,Medium,Medium,6,0
+SHP-00800,SUP-015,Electronic component,0.902,12,3.91,11.4,Road,6.7,6.34,High,Medium,5,1
+SHP-00801,SUP-007,Electronic component,0.704,15,4.5,20.9,Air,3.5,3.28,Critical,Low,2,0
+SHP-00802,SUP-038,Packaging,0.901,13,1.44,33.4,Rail,1.7,1.3,High,Medium,0,0
+SHP-00803,SUP-015,Electronic component,0.999,22,2.02,20.0,Road,2.8,2.39,Low,Medium,7,0
+SHP-00804,SUP-052,Raw material,0.742,16,2.31,25.2,Sea,1.4,4.18,High,Low,8,1
+SHP-00805,SUP-027,Electronic component,0.893,12,2.21,23.5,Road,5.5,5.04,Low,Medium,4,0
+SHP-00806,SUP-001,Raw material,0.724,28,10.14,20.5,Road,4.3,2.63,High,High,15,1
+SHP-00807,SUP-058,Electronic component,0.976,22,0.78,19.5,Road,2.0,2.5,Medium,Low,4,0
+SHP-00808,SUP-031,Packaging,0.726,7,2.23,22.4,Sea,1.4,3.32,High,Medium,12,1
+SHP-00809,SUP-016,Spare part,0.7,7,2.56,24.1,Sea,0.6,2.96,Critical,High,2,0
+SHP-00810,SUP-041,Raw material,0.502,12,4.94,7.2,Rail,3.2,7.95,Medium,High,9,1
+SHP-00811,SUP-032,Packaging,0.708,8,4.97,20.0,Sea,0.8,4.38,Medium,Low,16,1
+SHP-00812,SUP-002,Electronic component,0.691,26,3.93,16.5,Sea,8.8,1.73,High,Medium,13,1
+SHP-00813,SUP-046,Raw material,0.827,12,1.58,14.9,Sea,1.1,3.28,Medium,High,5,0
+SHP-00814,SUP-025,Raw material,0.726,21,4.81,28.4,Sea,0.3,1.79,Low,Medium,1,0
+SHP-00815,SUP-042,Raw material,0.776,23,2.0,12.1,Road,0.8,3.36,Low,Low,9,1
+SHP-00816,SUP-054,Raw material,0.803,6,2.35,6.8,Sea,2.7,1.49,Medium,Low,3,0
+SHP-00817,SUP-037,Raw material,0.807,12,5.31,24.4,Rail,2.0,3.89,High,Medium,1,0
+SHP-00818,SUP-041,Electronic component,0.431,14,5.81,6.6,Air,1.8,3.26,High,Medium,7,0
+SHP-00819,SUP-016,Packaging,0.678,18,4.14,2.6,Road,1.9,2.45,Low,Low,7,1
+SHP-00820,SUP-015,Raw material,0.898,25,1.09,25.3,Air,1.3,3.91,Medium,Low,4,0
+SHP-00821,SUP-025,Raw material,0.681,45,3.31,19.3,Sea,3.2,3.52,Medium,Medium,2,1
+SHP-00822,SUP-052,Raw material,0.842,35,4.63,21.8,Road,0.8,1.34,Medium,Medium,6,1
+SHP-00823,SUP-032,Packaging,0.639,16,4.82,14.5,Sea,2.4,7.03,High,High,3,1
+SHP-00824,SUP-021,Electronic component,0.913,16,3.59,6.9,Road,3.3,1.82,Medium,Medium,5,1
+SHP-00825,SUP-047,Packaging,0.824,33,2.89,8.5,Road,2.1,2.46,High,High,5,1
+SHP-00826,SUP-052,Raw material,0.797,16,4.97,15.8,Road,2.9,2.71,Critical,High,6,0
+SHP-00827,SUP-055,Raw material,0.683,12,2.6,7.8,Sea,1.9,4.69,High,Low,3,0
+SHP-00828,SUP-018,Spare part,0.971,26,1.62,20.5,Rail,3.5,1.62,High,Medium,7,1
+SHP-00829,SUP-043,Raw material,0.799,19,4.0,14.3,Road,2.1,2.76,Low,Low,3,0
+SHP-00830,SUP-036,Raw material,0.999,7,0.24,19.5,Rail,4.9,4.22,Low,High,6,0
+SHP-00831,SUP-027,Raw material,0.83,14,1.22,19.2,Road,2.4,4.71,Low,Low,4,0
+SHP-00832,SUP-024,Spare part,0.958,8,6.6,21.1,Rail,4.7,1.88,High,Medium,2,0
+SHP-00833,SUP-007,Packaging,0.723,4,3.79,22.0,Sea,1.3,3.1,High,High,0,0
+SHP-00834,SUP-017,Packaging,0.927,38,0.71,15.2,Air,0.9,0.47,Medium,Low,11,0
+SHP-00835,SUP-033,Spare part,0.826,17,3.03,19.5,Sea,3.5,3.08,Medium,High,16,1
+SHP-00836,SUP-054,Raw material,0.741,14,2.25,19.9,Rail,2.1,4.79,Medium,Low,5,0
+SHP-00837,SUP-052,Spare part,0.786,12,2.15,1.0,Sea,0.2,2.48,High,Medium,12,1
+SHP-00838,SUP-012,Raw material,0.767,16,5.69,23.2,Road,1.1,5.88,High,Medium,14,1
+SHP-00839,SUP-041,Packaging,0.479,12,4.64,19.2,Road,2.7,2.97,High,Low,3,1
+SHP-00840,SUP-006,Electronic component,0.64,10,3.51,22.5,Road,2.8,2.7,Critical,Medium,5,0
+SHP-00841,SUP-041,Electronic component,0.452,13,4.25,7.7,Rail,1.9,7.2,Medium,High,7,1
+SHP-00842,SUP-021,Spare part,0.824,32,2.45,15.5,Rail,2.1,4.28,High,Low,0,0
+SHP-00843,SUP-027,Raw material,0.896,26,2.69,9.3,Air,2.3,0.86,High,Medium,4,1
+SHP-00844,SUP-044,Spare part,0.867,13,1.93,24.0,Road,0.4,1.09,Medium,High,7,1
+SHP-00845,SUP-026,Electronic component,0.869,40,8.45,6.8,Road,5.4,3.61,Critical,Medium,9,1
+SHP-00846,SUP-049,Packaging,0.921,16,1.11,10.6,Air,5.3,2.93,Low,Low,1,0
+SHP-00847,SUP-033,Spare part,0.916,11,1.14,22.3,Sea,1.1,1.98,High,High,0,0
+SHP-00848,SUP-060,Raw material,0.937,19,1.62,13.0,Road,7.2,4.92,High,Low,5,1
+SHP-00849,SUP-039,Spare part,0.706,34,8.95,10.6,Road,2.0,2.58,Critical,Medium,4,1
+SHP-00850,SUP-018,Packaging,0.999,31,3.03,25.3,Road,1.3,0.2,Medium,Medium,9,1
+SHP-00851,SUP-047,Chemical,0.865,11,1.91,25.6,Rail,2.0,3.77,Medium,Medium,3,0
+SHP-00852,SUP-025,Raw material,0.646,9,3.44,23.8,Road,6.8,5.36,High,Low,3,1
+SHP-00853,SUP-033,Packaging,0.84,13,1.65,24.8,Road,0.8,1.96,High,Low,6,1
+SHP-00854,SUP-009,Packaging,0.862,21,2.11,16.1,Air,2.4,1.37,Medium,Medium,8,0
+SHP-00855,SUP-008,Electronic component,0.9,24,2.08,16.4,Road,3.4,0.71,High,Low,6,1
+SHP-00856,SUP-035,Raw material,0.572,29,5.91,12.8,Road,3.5,4.04,Medium,Medium,3,1
+SHP-00857,SUP-012,Raw material,0.72,18,4.4,19.3,Road,2.2,3.85,High,Medium,12,1
+SHP-00858,SUP-060,Spare part,0.919,18,1.67,13.8,Sea,6.5,4.18,Critical,Medium,2,0
+SHP-00859,SUP-052,Raw material,0.809,17,6.45,14.5,Road,7.3,3.51,Medium,Low,8,0
+SHP-00860,SUP-043,Chemical,0.899,27,1.54,22.8,Road,6.3,1.75,Medium,Low,10,1
+SHP-00861,SUP-045,Spare part,0.887,24,1.09,27.5,Road,2.8,2.77,Critical,High,4,0
+SHP-00862,SUP-036,Raw material,0.927,11,2.55,21.2,Air,4.1,4.27,High,Medium,4,0
+SHP-00863,SUP-004,Raw material,0.805,23,5.2,32.4,Sea,1.7,3.4,Critical,Low,9,1
+SHP-00864,SUP-024,Packaging,0.969,26,1.82,12.4,Road,4.7,3.68,Medium,Low,5,0
+SHP-00865,SUP-030,Raw material,0.613,27,3.1,3.3,Road,1.3,2.65,Critical,Low,2,1
+SHP-00866,SUP-055,Packaging,0.724,19,3.83,23.7,Road,1.0,4.39,Low,High,13,0
+SHP-00867,SUP-014,Chemical,0.739,18,3.93,11.8,Rail,1.8,3.86,Medium,Low,3,0
+SHP-00868,SUP-030,Packaging,0.603,16,5.08,15.8,Sea,3.2,3.45,Medium,Low,5,0
+SHP-00869,SUP-021,Electronic component,0.86,17,2.91,3.8,Rail,6.8,4.66,High,Medium,9,1
+SHP-00870,SUP-009,Chemical,0.905,36,4.89,10.8,Road,7.1,7.11,Critical,Low,7,1
+SHP-00871,SUP-007,Packaging,0.705,17,2.58,6.0,Sea,0.2,1.8,High,Low,12,1
+SHP-00872,SUP-022,Raw material,0.832,11,1.33,14.5,Air,4.2,2.36,High,High,4,0
+SHP-00873,SUP-005,Packaging,0.721,19,2.35,14.8,Road,0.9,3.19,Medium,Medium,6,0
+SHP-00874,SUP-005,Spare part,0.748,24,5.09,18.7,Road,9.3,3.16,Medium,Low,7,1
+SHP-00875,SUP-022,Packaging,0.805,26,2.59,27.9,Road,0.7,2.11,Medium,Medium,0,0
+SHP-00876,SUP-013,Electronic component,0.855,9,6.43,23.4,Sea,1.2,1.13,Low,Low,5,0
+SHP-00877,SUP-034,Electronic component,0.941,33,0.88,5.0,Air,5.1,1.88,Medium,Low,7,1
+SHP-00878,SUP-002,Raw material,0.596,23,8.16,22.9,Air,1.6,3.82,Critical,Medium,6,1
+SHP-00879,SUP-019,Raw material,0.695,32,2.79,18.9,Sea,1.5,3.0,High,Medium,7,1
+SHP-00880,SUP-028,Raw material,0.798,8,2.79,17.2,Road,1.1,2.84,High,Medium,2,0
+SHP-00881,SUP-058,Spare part,0.912,27,0.82,17.8,Road,1.3,2.69,Medium,High,7,1
+SHP-00882,SUP-039,Raw material,0.724,9,6.74,19.6,Road,4.4,3.02,High,Low,3,1
+SHP-00883,SUP-053,Chemical,0.619,14,4.23,12.5,Sea,1.7,3.02,Low,High,2,1
+SHP-00884,SUP-021,Raw material,0.962,24,8.05,16.5,Rail,1.9,2.03,Medium,Medium,7,1
+SHP-00885,SUP-027,Electronic component,0.821,9,5.22,27.5,Road,1.7,3.27,Medium,Low,5,0
+SHP-00886,SUP-026,Electronic component,0.849,12,2.4,12.4,Road,3.1,2.72,Medium,High,0,0
+SHP-00887,SUP-054,Electronic component,0.726,8,2.7,9.8,Air,2.3,8.3,Low,Low,4,0
+SHP-00888,SUP-058,Chemical,0.938,23,3.88,17.5,Air,3.8,2.81,High,Medium,9,1
+SHP-00889,SUP-058,Spare part,0.96,11,1.99,9.0,Air,3.3,2.1,Medium,Medium,4,0
+SHP-00890,SUP-046,Spare part,0.828,16,1.95,4.2,Road,6.1,1.85,Medium,Low,9,1
+SHP-00891,SUP-031,Raw material,0.733,20,3.7,15.2,Sea,8.9,2.34,Medium,High,3,1
+SHP-00892,SUP-033,Chemical,0.899,19,0.82,29.6,Sea,2.0,1.99,High,Low,9,0
+SHP-00893,SUP-059,Raw material,0.654,18,4.76,17.7,Air,3.6,3.25,Medium,High,2,0
+SHP-00894,SUP-018,Spare part,0.963,18,2.99,19.4,Air,1.5,1.66,Medium,Low,8,1
+SHP-00895,SUP-021,Packaging,0.915,8,1.05,1.0,Sea,3.2,3.01,High,Low,7,1
+SHP-00896,SUP-054,Electronic component,0.759,15,6.0,21.5,Sea,3.9,5.07,Low,Low,5,1
+SHP-00897,SUP-024,Raw material,0.936,18,4.08,18.7,Rail,3.1,3.42,Critical,High,8,1
+SHP-00898,SUP-015,Raw material,0.819,17,3.43,12.7,Road,3.8,3.76,Low,Low,5,0
+SHP-00899,SUP-034,Raw material,0.983,15,0.73,19.4,Road,2.4,0.98,Medium,High,7,1
+SHP-00900,SUP-020,Spare part,0.711,11,4.89,19.4,Sea,1.6,5.71,Medium,Low,6,0
+SHP-00901,SUP-054,Chemical,0.73,19,3.05,9.5,Air,3.1,2.32,High,Medium,0,0
+SHP-00902,SUP-055,Spare part,0.738,21,3.8,20.7,Road,8.4,3.64,Medium,Low,6,1
+SHP-00903,SUP-019,Raw material,0.723,13,5.02,27.6,Road,1.3,4.12,Critical,Low,3,0
+SHP-00904,SUP-032,Packaging,0.682,26,2.53,16.2,Sea,1.7,5.94,Medium,High,13,1
+SHP-00905,SUP-060,Raw material,0.997,33,0.22,11.1,Sea,1.1,6.13,High,Medium,5,1
+SHP-00906,SUP-045,Packaging,0.848,17,2.11,16.6,Sea,0.3,2.19,Medium,Medium,3,0
+SHP-00907,SUP-013,Electronic component,0.861,11,7.81,24.8,Rail,2.9,2.89,Low,Medium,4,0
+SHP-00908,SUP-036,Electronic component,0.934,9,8.48,8.2,Sea,4.2,4.41,Medium,Medium,5,0
+SHP-00909,SUP-038,Packaging,0.859,14,3.28,22.6,Sea,1.0,7.17,High,Medium,6,1
+SHP-00910,SUP-040,Raw material,0.947,16,4.09,12.6,Road,5.4,1.83,Medium,High,9,1
+SHP-00911,SUP-002,Electronic component,0.691,9,3.78,19.9,Road,3.8,2.48,Critical,Medium,7,0
+SHP-00912,SUP-018,Packaging,0.957,14,2.13,13.5,Sea,4.5,0.77,High,Medium,1,0
+SHP-00913,SUP-052,Raw material,0.771,26,2.98,13.5,Road,2.8,1.49,Critical,Medium,3,0
+SHP-00914,SUP-015,Spare part,0.88,5,4.91,30.2,Rail,1.9,1.67,Medium,Medium,5,0
+SHP-00915,SUP-018,Packaging,0.956,17,5.77,6.7,Air,1.6,3.77,High,Medium,3,0
+SHP-00916,SUP-020,Chemical,0.716,12,3.77,21.9,Air,3.5,5.11,High,Medium,7,1
+SHP-00917,SUP-011,Packaging,0.834,16,2.98,31.9,Road,2.9,3.33,High,Medium,0,0
+SHP-00918,SUP-010,Chemical,0.664,34,3.8,23.5,Air,2.2,3.19,Critical,Medium,5,0
+SHP-00919,SUP-021,Chemical,0.871,16,6.46,7.4,Road,2.7,3.23,High,High,7,1
+SHP-00920,SUP-053,Spare part,0.585,15,6.27,7.7,Sea,7.4,4.07,Critical,High,9,1
+SHP-00921,SUP-001,Packaging,0.733,23,2.46,12.0,Road,2.4,2.9,High,High,4,1
+SHP-00922,SUP-017,Raw material,0.919,19,7.26,19.3,Air,2.6,2.83,Low,Medium,6,1
+SHP-00923,SUP-004,Raw material,0.722,17,1.99,19.8,Sea,6.2,2.84,High,Medium,2,0
+SHP-00924,SUP-034,Packaging,0.953,19,5.48,7.8,Road,2.9,2.64,Medium,Low,7,1
+SHP-00925,SUP-016,Raw material,0.645,29,6.31,11.0,Road,2.2,4.47,Critical,Medium,16,1
+SHP-00926,SUP-048,Raw material,0.474,25,5.47,11.5,Sea,4.4,5.8,High,Low,6,1
+SHP-00927,SUP-036,Raw material,0.97,14,1.97,16.6,Road,3.7,0.57,Low,Low,5,0
+SHP-00928,SUP-048,Packaging,0.522,33,4.86,33.9,Road,2.6,6.7,Low,High,8,1
+SHP-00929,SUP-039,Raw material,0.727,13,2.53,10.5,Rail,2.8,3.17,Low,High,5,1
+SHP-00930,SUP-027,Packaging,0.836,17,7.45,10.2,Sea,1.7,6.98,Medium,Medium,6,0
+SHP-00931,SUP-052,Chemical,0.828,18,2.91,8.9,Rail,1.6,4.43,Low,Low,15,1
+SHP-00932,SUP-029,Spare part,0.75,14,2.36,23.1,Road,3.3,2.21,High,Medium,1,0
+SHP-00933,SUP-057,Electronic component,0.8,31,7.42,17.7,Sea,1.3,3.89,High,Medium,4,0
+SHP-00934,SUP-060,Packaging,0.986,14,2.61,10.8,Rail,0.8,4.16,High,High,5,0
+SHP-00935,SUP-036,Packaging,0.966,15,2.88,15.1,Rail,1.8,1.79,Medium,High,12,1
+SHP-00936,SUP-041,Electronic component,0.492,27,10.6,11.7,Road,2.5,3.43,Medium,Low,12,1
+SHP-00937,SUP-016,Packaging,0.646,13,5.43,20.4,Road,3.6,2.53,Low,Low,5,0
+SHP-00938,SUP-049,Raw material,0.895,8,1.66,39.5,Road,4.3,1.06,Critical,Low,0,0
+SHP-00939,SUP-041,Spare part,0.438,17,6.88,22.4,Air,8.1,3.04,Low,Low,14,1
+SHP-00940,SUP-055,Raw material,0.714,10,2.69,17.3,Road,0.4,3.26,Low,Low,5,0
+SHP-00941,SUP-017,Spare part,0.925,9,1.63,12.7,Air,3.1,1.18,Medium,Low,3,0
+SHP-00942,SUP-048,Packaging,0.492,5,5.78,7.3,Road,3.0,3.7,High,Low,5,1
+SHP-00943,SUP-029,Raw material,0.837,6,4.81,23.9,Road,2.7,7.07,Low,Low,5,0
+SHP-00944,SUP-012,Chemical,0.802,6,2.36,23.4,Road,4.1,3.69,High,Low,6,0
+SHP-00945,SUP-011,Raw material,0.801,35,2.87,14.3,Rail,3.9,1.93,High,Medium,6,0
+SHP-00946,SUP-034,Chemical,0.963,6,1.72,27.7,Air,6.4,8.37,High,Low,6,1
+SHP-00947,SUP-020,Packaging,0.674,9,6.46,18.2,Road,2.8,4.03,Medium,High,10,1
+SHP-00948,SUP-007,Raw material,0.7,15,3.85,24.2,Road,6.7,9.22,Low,Low,5,0
+SHP-00949,SUP-026,Raw material,0.82,22,7.88,20.4,Road,2.8,6.19,Medium,Low,8,1
+SHP-00950,SUP-040,Chemical,0.842,23,2.21,16.6,Sea,2.3,3.24,Medium,Low,6,1
+SHP-00951,SUP-020,Electronic component,0.678,11,3.27,10.4,Road,3.4,3.43,High,Medium,7,0
+SHP-00952,SUP-058,Spare part,0.95,17,5.43,16.8,Sea,1.1,3.77,Medium,Low,4,0
+SHP-00953,SUP-047,Chemical,0.781,15,4.29,24.7,Road,1.9,3.4,Medium,Medium,0,0
+SHP-00954,SUP-031,Chemical,0.754,17,6.66,13.9,Road,2.8,2.59,Low,Low,5,1
+SHP-00955,SUP-057,Raw material,0.788,18,1.91,21.5,Air,1.8,2.35,High,High,2,0
+SHP-00956,SUP-026,Chemical,0.941,20,2.13,9.3,Rail,6.3,4.21,Medium,Low,6,0
+SHP-00957,SUP-009,Spare part,0.846,12,3.31,24.2,Road,2.0,1.7,High,Low,2,0
+SHP-00958,SUP-003,Raw material,0.715,29,4.09,20.5,Sea,0.9,5.3,Low,High,3,0
+SHP-00959,SUP-057,Electronic component,0.775,38,3.07,8.4,Road,3.1,3.16,Critical,Low,7,1
+SHP-00960,SUP-058,Raw material,0.999,14,2.07,16.2,Road,2.8,0.45,High,Low,2,0
+SHP-00961,SUP-045,Electronic component,0.934,44,2.62,25.5,Road,3.2,4.42,Medium,High,4,0
+SHP-00962,SUP-007,Chemical,0.738,12,2.83,7.9,Rail,1.7,2.26,Low,Low,6,1
+SHP-00963,SUP-018,Electronic component,0.906,17,4.71,9.4,Sea,6.7,1.53,Medium,Low,5,0
+SHP-00964,SUP-003,Packaging,0.72,15,8.03,17.4,Road,0.4,3.08,Low,Medium,6,0
+SHP-00965,SUP-004,Electronic component,0.731,17,5.04,35.1,Sea,3.2,3.24,Medium,Low,2,0
+SHP-00966,SUP-015,Raw material,0.95,27,2.8,12.6,Air,0.9,2.72,Critical,High,0,0
+SHP-00967,SUP-035,Raw material,0.625,15,4.24,22.0,Sea,4.5,5.82,High,Medium,13,1
+SHP-00968,SUP-004,Spare part,0.773,9,3.8,20.1,Sea,3.1,4.99,Low,Medium,5,0
+SHP-00969,SUP-060,Packaging,0.89,12,3.18,13.3,Sea,2.8,1.81,High,Low,2,0
+SHP-00970,SUP-028,Electronic component,0.783,15,2.15,19.3,Rail,2.6,2.38,Medium,Medium,1,0
+SHP-00971,SUP-016,Chemical,0.697,18,6.01,14.4,Road,6.3,5.17,Critical,Medium,10,1
+SHP-00972,SUP-031,Raw material,0.767,11,2.81,15.1,Rail,1.8,1.97,Low,Low,6,0
+SHP-00973,SUP-048,Raw material,0.509,11,8.72,4.7,Air,7.1,4.49,High,High,11,1
+SHP-00974,SUP-019,Raw material,0.688,18,4.19,17.8,Rail,1.1,6.59,High,Medium,8,1
+SHP-00975,SUP-003,Spare part,0.723,19,5.89,25.2,Air,2.3,2.8,Low,Medium,3,1
+SHP-00976,SUP-004,Chemical,0.805,25,4.48,18.5,Road,4.6,1.5,Low,Low,6,0
+SHP-00977,SUP-052,Packaging,0.746,12,2.22,26.7,Sea,3.2,2.22,Medium,Low,4,0
+SHP-00978,SUP-007,Raw material,0.727,21,6.85,22.6,Road,2.1,2.37,Critical,Medium,7,1
+SHP-00979,SUP-039,Raw material,0.719,15,2.79,17.5,Sea,0.5,2.29,High,Medium,2,0
+SHP-00980,SUP-024,Packaging,0.946,13,1.48,13.0,Road,2.5,1.89,High,Low,7,1
+SHP-00981,SUP-047,Electronic component,0.758,16,2.89,14.1,Road,2.5,8.83,High,Low,15,1
+SHP-00982,SUP-004,Spare part,0.759,17,1.95,6.2,Sea,1.4,4.04,High,High,2,1
+SHP-00983,SUP-054,Chemical,0.754,8,3.81,15.9,Sea,4.7,2.98,Medium,Low,1,0
+SHP-00984,SUP-042,Electronic component,0.758,9,5.84,19.2,Air,1.2,3.07,Medium,Low,3,0
+SHP-00985,SUP-027,Chemical,0.862,22,6.15,31.7,Sea,3.0,1.81,High,Medium,3,0
+SHP-00986,SUP-013,Spare part,0.809,13,2.83,22.2,Road,0.1,2.81,Medium,Low,4,0
+SHP-00987,SUP-059,Electronic component,0.669,18,4.05,11.1,Sea,4.0,6.54,Critical,Low,5,1
+SHP-00988,SUP-019,Packaging,0.759,22,4.97,6.5,Road,4.0,3.29,Low,Low,8,1
+SHP-00989,SUP-030,Spare part,0.628,16,4.13,16.3,Rail,2.5,5.7,Medium,High,4,0
+SHP-00990,SUP-024,Raw material,0.942,21,4.84,24.5,Rail,1.5,3.78,High,Low,2,0
+SHP-00991,SUP-014,Spare part,0.795,17,3.1,16.2,Road,5.5,8.41,Medium,Medium,2,0
+SHP-00992,SUP-025,Raw material,0.603,17,3.49,22.3,Rail,5.7,5.43,Low,High,24,1
+SHP-00993,SUP-010,Packaging,0.682,28,4.36,16.6,Air,2.9,8.65,Medium,Medium,11,1
+SHP-00994,SUP-001,Chemical,0.751,15,2.08,23.7,Road,7.1,5.28,High,Medium,1,1
+SHP-00995,SUP-018,Packaging,0.955,23,2.42,5.2,Sea,1.1,2.7,Critical,Medium,4,0
+SHP-00996,SUP-007,Electronic component,0.761,8,4.13,30.8,Rail,2.8,2.24,Low,Low,4,0
+SHP-00997,SUP-025,Packaging,0.602,18,3.61,9.1,Road,0.2,5.81,Low,Medium,3,0
+SHP-00998,SUP-052,Raw material,0.735,32,4.23,24.3,Air,0.8,5.37,Medium,High,3,0
+SHP-00999,SUP-010,Raw material,0.675,45,3.64,15.8,Road,0.7,5.75,Critical,Medium,13,1
+SHP-01000,SUP-001,Raw material,0.751,8,2.54,17.1,Road,3.2,1.34,Medium,Medium,0,0
+SHP-01001,SUP-007,Packaging,0.733,13,2.14,16.1,Air,0.9,2.72,Critical,Low,10,1
+SHP-01002,SUP-031,Electronic component,0.708,10,2.43,20.0,Road,2.1,4.27,Critical,High,7,0
+SHP-01003,SUP-017,Raw material,0.91,15,6.32,21.7,Road,1.4,1.92,Medium,Low,3,0
+SHP-01004,SUP-030,Spare part,0.672,24,3.61,26.5,Air,0.7,2.93,High,High,5,0
+SHP-01005,SUP-002,Electronic component,0.668,29,4.73,29.3,Road,3.2,2.77,High,Low,2,0
+SHP-01006,SUP-020,Electronic component,0.706,29,3.54,20.7,Sea,3.5,1.93,Medium,Medium,11,1
+SHP-01007,SUP-025,Electronic component,0.597,7,8.62,31.7,Sea,1.3,4.72,Medium,High,0,0
+SHP-01008,SUP-026,Raw material,0.869,16,1.71,18.7,Road,3.6,1.87,High,Medium,3,0
+SHP-01009,SUP-034,Chemical,0.999,12,1.88,26.6,Rail,1.8,1.42,High,Low,5,0
+SHP-01010,SUP-047,Electronic component,0.846,15,2.18,21.4,Road,2.2,2.52,High,High,0,0
+SHP-01011,SUP-029,Raw material,0.746,13,5.69,13.6,Air,3.1,4.29,Critical,Low,24,1
+SHP-01012,SUP-051,Spare part,0.852,8,3.42,19.4,Road,1.4,3.16,Medium,Low,5,0
+SHP-01013,SUP-032,Chemical,0.731,29,3.69,22.0,Sea,1.6,3.68,High,Medium,3,1
+SHP-01014,SUP-016,Chemical,0.728,11,2.36,17.7,Road,3.1,1.55,Critical,Medium,5,0
+SHP-01015,SUP-014,Spare part,0.761,12,9.42,21.3,Air,4.6,5.08,Medium,Medium,6,1
+SHP-01016,SUP-020,Spare part,0.707,32,3.57,24.9,Road,4.2,7.38,Low,Low,5,0
+SHP-01017,SUP-036,Electronic component,0.999,7,0.67,17.8,Road,2.1,2.3,Medium,Medium,3,0
+SHP-01018,SUP-015,Packaging,0.901,20,0.97,1.0,Rail,1.0,1.28,Critical,High,6,0
+SHP-01019,SUP-055,Packaging,0.695,26,2.51,31.4,Rail,1.1,2.84,Medium,Low,8,0
+SHP-01020,SUP-029,Raw material,0.791,31,3.26,15.6,Sea,4.2,1.86,High,Medium,4,0
+SHP-01021,SUP-052,Raw material,0.824,19,5.19,11.4,Road,1.1,6.33,Low,Medium,5,1
+SHP-01022,SUP-041,Raw material,0.464,23,6.01,9.0,Road,6.1,4.09,Medium,High,7,1
+SHP-01023,SUP-021,Packaging,0.887,26,1.1,15.3,Road,3.1,2.94,High,Medium,3,0
+SHP-01024,SUP-014,Chemical,0.783,15,3.31,13.5,Road,2.9,2.78,Low,High,4,0
+SHP-01025,SUP-045,Chemical,0.947,10,5.28,12.1,Sea,2.1,3.19,Critical,Low,8,1
+SHP-01026,SUP-020,Electronic component,0.683,33,3.49,12.5,Sea,3.1,2.57,Low,Low,4,0
+SHP-01027,SUP-015,Raw material,0.878,22,3.11,22.2,Sea,0.8,2.91,Critical,High,4,0
+SHP-01028,SUP-056,Electronic component,0.839,16,2.45,34.2,Road,1.3,2.23,Medium,High,2,0
+SHP-01029,SUP-029,Packaging,0.808,8,4.04,24.6,Road,3.1,5.21,Critical,Medium,10,1
+SHP-01030,SUP-003,Spare part,0.66,5,3.17,27.0,Air,2.1,1.91,High,Medium,13,1
+SHP-01031,SUP-030,Spare part,0.593,20,3.34,15.0,Road,3.7,3.59,Low,Medium,6,0
+SHP-01032,SUP-028,Spare part,0.746,5,2.9,18.8,Air,2.6,5.24,Low,Low,4,0
+SHP-01033,SUP-052,Spare part,0.805,16,3.0,21.4,Road,1.3,4.63,Low,High,7,0
+SHP-01034,SUP-043,Spare part,0.844,11,2.26,12.7,Road,4.2,1.27,High,High,9,1
+SHP-01035,SUP-012,Electronic component,0.709,13,3.18,14.6,Sea,2.2,4.84,High,Medium,2,0
+SHP-01036,SUP-010,Raw material,0.688,29,6.17,24.8,Road,5.0,2.46,Medium,Low,11,1
+SHP-01037,SUP-037,Raw material,0.827,11,1.8,26.7,Sea,1.4,2.01,Medium,Low,5,0
+SHP-01038,SUP-003,Electronic component,0.72,17,3.76,18.5,Road,1.4,5.22,High,Low,0,1
+SHP-01039,SUP-020,Raw material,0.704,11,2.4,8.4,Road,5.7,3.01,High,Medium,7,1
+SHP-01040,SUP-009,Raw material,0.885,19,3.96,15.6,Road,1.3,1.03,High,Medium,4,0
+SHP-01041,SUP-002,Spare part,0.668,17,4.53,6.5,Road,1.4,2.37,Medium,Low,5,0
+SHP-01042,SUP-056,Raw material,0.814,16,8.94,18.6,Rail,0.7,2.98,High,Medium,3,0
+SHP-01043,SUP-006,Spare part,0.648,26,3.03,20.0,Road,1.9,3.25,Critical,High,3,1
+SHP-01044,SUP-001,Chemical,0.787,7,7.49,15.8,Air,1.5,2.53,Medium,Low,3,0
+SHP-01045,SUP-056,Packaging,0.852,6,1.69,19.9,Sea,5.4,3.62,Low,Medium,4,0
+SHP-01046,SUP-012,Packaging,0.674,9,3.55,21.3,Road,1.6,4.15,Low,Medium,7,0
+SHP-01047,SUP-049,Electronic component,0.939,18,0.83,20.1,Road,1.8,1.88,High,Low,0,0
+SHP-01048,SUP-002,Packaging,0.614,20,10.28,8.4,Road,2.2,5.63,Medium,Medium,7,1
+SHP-01049,SUP-010,Raw material,0.714,3,4.5,16.0,Sea,8.7,4.33,Critical,Medium,3,0
+SHP-01050,SUP-007,Spare part,0.763,20,4.18,21.3,Rail,2.3,3.6,High,Low,6,0
+SHP-01051,SUP-043,Electronic component,0.893,36,1.47,30.6,Road,2.5,1.84,High,Low,8,0
+SHP-01052,SUP-038,Raw material,0.888,14,0.85,15.8,Rail,2.2,4.67,High,High,3,0
+SHP-01053,SUP-029,Chemical,0.77,33,2.83,22.4,Rail,4.6,2.6,Medium,Low,0,0
+SHP-01054,SUP-015,Packaging,0.923,20,1.54,25.0,Road,3.6,1.95,High,Medium,4,0
+SHP-01055,SUP-006,Electronic component,0.641,31,3.81,16.4,Road,3.4,7.33,Low,Medium,9,1
+SHP-01056,SUP-035,Packaging,0.604,29,4.58,27.2,Sea,4.3,2.92,High,High,14,1
+SHP-01057,SUP-014,Raw material,0.822,14,3.88,27.6,Road,2.3,1.82,Critical,Medium,4,1
+SHP-01058,SUP-036,Packaging,0.964,24,0.34,29.0,Road,1.9,1.79,High,High,3,0
+SHP-01059,SUP-042,Raw material,0.741,14,2.25,21.7,Road,2.2,2.07,Critical,Medium,6,1
+SHP-01060,SUP-051,Raw material,0.787,36,2.24,36.9,Rail,1.4,1.86,Medium,Medium,6,0
+SHP-01061,SUP-030,Raw material,0.602,14,6.91,13.1,Rail,3.9,7.42,High,Low,11,1
+SHP-01062,SUP-001,Electronic component,0.687,21,6.26,35.0,Road,2.1,3.15,High,Low,6,0
+SHP-01063,SUP-017,Electronic component,0.912,39,3.0,24.1,Rail,1.1,2.91,High,Low,8,1
+SHP-01064,SUP-052,Electronic component,0.867,21,2.2,28.7,Air,1.3,1.2,Low,Low,5,0
+SHP-01065,SUP-032,Raw material,0.751,13,6.07,15.4,Road,2.8,2.12,Medium,Medium,3,1
+SHP-01066,SUP-038,Raw material,0.825,8,3.37,24.8,Sea,1.1,6.81,High,Low,2,0
+SHP-01067,SUP-028,Packaging,0.842,7,5.24,29.4,Road,3.6,1.57,Low,Low,7,1
+SHP-01068,SUP-010,Raw material,0.715,20,4.47,9.3,Road,2.1,3.96,High,Low,4,0
+SHP-01069,SUP-054,Chemical,0.749,15,1.96,16.7,Sea,4.7,1.33,Critical,Medium,2,0
+SHP-01070,SUP-047,Spare part,0.827,9,1.27,1.0,Sea,0.3,1.37,Critical,Medium,3,0
+SHP-01071,SUP-060,Electronic component,0.905,23,1.82,16.6,Road,2.1,2.04,Low,High,5,0
+SHP-01072,SUP-052,Spare part,0.813,23,4.77,11.5,Sea,0.9,4.56,Critical,Medium,4,1
+SHP-01073,SUP-018,Raw material,0.916,15,1.58,16.3,Rail,9.9,2.39,Low,High,5,1
+SHP-01074,SUP-016,Raw material,0.68,32,7.21,41.4,Road,1.5,3.28,Medium,Medium,1,0
+SHP-01075,SUP-015,Chemical,0.844,6,4.31,31.7,Sea,1.3,3.85,Critical,Low,4,0
+SHP-01076,SUP-056,Chemical,0.858,13,5.64,6.5,Sea,3.5,2.99,Low,High,5,1
+SHP-01077,SUP-034,Spare part,0.996,21,1.21,22.4,Road,0.9,0.39,Low,Low,1,0
+SHP-01078,SUP-028,Raw material,0.79,9,2.09,24.4,Rail,4.1,2.92,Low,Medium,3,0
+SHP-01079,SUP-059,Chemical,0.631,24,3.1,15.3,Road,5.4,3.17,Medium,Medium,6,1
+SHP-01080,SUP-037,Electronic component,0.774,28,4.26,19.4,Road,1.8,2.76,High,Low,1,0
+SHP-01081,SUP-055,Electronic component,0.725,4,2.16,20.2,Sea,2.0,2.67,Low,Medium,4,0
+SHP-01082,SUP-060,Raw material,0.955,33,0.58,7.2,Rail,2.6,2.12,Low,Low,3,0
+SHP-01083,SUP-005,Spare part,0.685,21,3.13,9.7,Rail,4.2,4.17,High,Low,23,1
+SHP-01084,SUP-022,Raw material,0.825,12,3.3,19.4,Rail,2.8,1.48,Medium,Low,0,0
+SHP-01085,SUP-045,Spare part,0.879,7,1.61,18.8,Rail,1.5,1.69,High,Low,4,0
+SHP-01086,SUP-049,Packaging,0.879,26,4.92,12.3,Road,0.6,3.61,Critical,Low,2,0
+SHP-01087,SUP-009,Chemical,0.842,8,5.8,11.6,Sea,7.3,4.06,High,Medium,12,1
+SHP-01088,SUP-020,Chemical,0.752,21,1.75,17.3,Air,3.6,6.16,Critical,Medium,6,1
+SHP-01089,SUP-033,Spare part,0.854,9,3.54,25.1,Air,7.4,2.73,Medium,Medium,4,0
+SHP-01090,SUP-048,Raw material,0.466,16,4.73,17.4,Rail,3.1,3.7,High,Medium,5,1
+SHP-01091,SUP-007,Raw material,0.749,25,5.35,31.0,Road,6.7,2.35,Medium,Low,3,0
+SHP-01092,SUP-037,Packaging,0.809,12,3.93,12.4,Road,1.1,2.9,Low,Low,2,0
+SHP-01093,SUP-018,Electronic component,0.955,33,2.31,19.5,Road,1.9,1.1,High,Medium,5,0
+SHP-01094,SUP-013,Raw material,0.829,22,2.71,15.2,Road,1.8,5.55,Low,High,3,1
+SHP-01095,SUP-031,Raw material,0.708,9,2.31,22.7,Air,1.0,2.75,Critical,Medium,2,0
+SHP-01096,SUP-025,Electronic component,0.686,8,10.65,11.7,Sea,1.2,5.82,High,Low,8,1
+SHP-01097,SUP-039,Raw material,0.682,11,2.66,33.4,Road,1.2,2.36,Critical,Medium,1,0
+SHP-01098,SUP-020,Raw material,0.733,16,7.93,4.5,Road,3.1,2.97,Medium,High,10,1
+SHP-01099,SUP-050,Spare part,0.872,34,3.91,31.7,Air,0.7,2.09,Medium,Low,4,0
+SHP-01100,SUP-005,Electronic component,0.637,38,3.58,18.7,Road,1.6,2.34,High,Low,8,1
+SHP-01101,SUP-052,Spare part,0.846,12,1.97,22.4,Sea,1.3,2.31,Medium,Low,2,0
+SHP-01102,SUP-002,Spare part,0.545,12,3.43,28.7,Road,0.9,4.55,High,Medium,6,1
+SHP-01103,SUP-045,Raw material,0.873,23,2.66,24.9,Road,1.4,0.83,High,High,4,0
+SHP-01104,SUP-021,Chemical,0.915,23,0.83,12.2,Road,2.7,3.19,Critical,Medium,6,1
+SHP-01105,SUP-024,Packaging,0.945,30,4.64,22.8,Sea,0.8,2.69,High,Low,3,0
+SHP-01106,SUP-002,Chemical,0.6,30,4.97,32.9,Road,2.1,3.86,Low,Medium,11,0
+SHP-01107,SUP-043,Raw material,0.845,10,2.75,10.9,Air,2.1,3.94,Medium,High,8,0
+SHP-01108,SUP-010,Raw material,0.701,7,3.96,34.9,Road,1.0,4.82,High,Medium,4,0
+SHP-01109,SUP-040,Raw material,0.812,22,3.56,21.1,Road,0.6,10.3,Low,High,7,1
+SHP-01110,SUP-044,Packaging,0.968,18,1.47,14.5,Sea,1.1,0.66,Medium,Low,3,0
+SHP-01111,SUP-051,Spare part,0.827,5,2.62,10.9,Road,1.6,6.03,Medium,Low,6,0
+SHP-01112,SUP-043,Packaging,0.842,7,7.65,16.2,Road,0.4,4.54,Low,Medium,3,1
+SHP-01113,SUP-019,Chemical,0.723,21,5.87,2.4,Rail,3.9,3.8,Medium,Medium,3,1
+SHP-01114,SUP-045,Spare part,0.859,15,3.9,14.7,Sea,1.6,1.49,Low,High,6,1
+SHP-01115,SUP-050,Packaging,0.883,21,1.87,15.9,Road,1.1,1.95,High,Medium,5,0
+SHP-01116,SUP-020,Raw material,0.74,9,1.94,9.4,Road,0.5,2.51,Low,Low,3,0
+SHP-01117,SUP-008,Spare part,0.83,22,3.83,24.0,Sea,2.8,2.56,High,Low,5,0
+SHP-01118,SUP-054,Electronic component,0.751,19,3.6,16.2,Air,5.5,4.33,Medium,Medium,10,1
+SHP-01119,SUP-009,Raw material,0.832,23,2.56,12.9,Sea,1.3,5.36,Critical,Low,11,1
+SHP-01120,SUP-036,Packaging,0.999,13,1.6,15.4,Sea,7.0,6.17,Low,Medium,3,0
+SHP-01121,SUP-015,Spare part,0.852,11,1.5,20.8,Air,2.0,2.12,High,Low,4,0
+SHP-01122,SUP-008,Raw material,0.947,7,1.02,18.6,Road,2.0,2.41,Medium,Low,5,0
+SHP-01123,SUP-047,Electronic component,0.822,14,5.18,12.4,Road,4.6,1.82,Medium,Medium,0,0
+SHP-01124,SUP-009,Raw material,0.821,27,1.32,19.0,Air,2.9,4.76,Medium,Low,1,0
+SHP-01125,SUP-041,Raw material,0.437,31,7.45,17.6,Air,0.7,5.34,Critical,Medium,9,1
+SHP-01126,SUP-042,Raw material,0.735,9,7.0,8.9,Sea,1.2,2.92,Critical,Medium,11,1
+SHP-01127,SUP-004,Chemical,0.725,16,4.52,15.7,Rail,5.0,1.84,Medium,Medium,3,1
+SHP-01128,SUP-011,Spare part,0.84,34,3.61,22.6,Road,3.0,2.96,Low,Medium,10,1
+SHP-01129,SUP-048,Raw material,0.427,37,4.65,22.6,Rail,7.0,5.2,High,Medium,2,1
+SHP-01130,SUP-031,Electronic component,0.648,13,3.22,16.2,Rail,3.5,2.09,High,High,5,1
+SHP-01131,SUP-008,Raw material,0.877,28,1.99,23.4,Rail,3.1,1.23,Medium,Low,13,1
+SHP-01132,SUP-060,Raw material,0.912,26,0.96,10.2,Sea,1.1,2.57,High,Low,5,1
+SHP-01133,SUP-016,Packaging,0.647,25,3.17,10.4,Rail,4.6,7.57,Medium,Medium,4,0
+SHP-01134,SUP-001,Chemical,0.719,6,3.82,16.0,Road,1.0,5.55,High,Medium,6,0
+SHP-01135,SUP-056,Packaging,0.808,12,2.41,30.0,Rail,2.3,2.59,Medium,Medium,5,0
+SHP-01136,SUP-001,Electronic component,0.821,15,3.26,19.3,Air,3.9,2.34,Medium,Medium,3,0
+SHP-01137,SUP-034,Packaging,0.962,15,4.19,15.8,Sea,2.5,1.25,Medium,Medium,5,1
+SHP-01138,SUP-060,Raw material,0.984,16,2.1,30.4,Road,2.0,1.05,High,Low,6,0
+SHP-01139,SUP-035,Raw material,0.534,39,5.77,15.7,Rail,1.8,3.86,Low,Medium,15,1
+SHP-01140,SUP-036,Spare part,0.96,14,0.5,35.9,Rail,2.1,7.17,High,Low,2,0
+SHP-01141,SUP-024,Chemical,0.964,20,4.13,13.9,Rail,1.6,1.61,High,Low,7,1
+SHP-01142,SUP-008,Spare part,0.855,19,1.23,9.9,Road,2.5,2.62,High,Medium,4,1
+SHP-01143,SUP-035,Spare part,0.628,16,3.6,16.7,Sea,1.1,2.52,Low,Medium,10,1
+SHP-01144,SUP-054,Packaging,0.723,9,2.43,16.0,Sea,1.3,4.23,Medium,Low,0,0
+SHP-01145,SUP-006,Spare part,0.644,17,2.62,11.5,Rail,0.7,3.65,Medium,High,11,1
+SHP-01146,SUP-053,Electronic component,0.615,5,4.6,38.8,Rail,12.1,3.29,High,Medium,2,0
+SHP-01147,SUP-025,Raw material,0.676,21,4.96,20.5,Road,2.4,2.43,Critical,Medium,7,0
+SHP-01148,SUP-033,Raw material,0.81,5,6.57,21.7,Rail,0.6,1.96,Medium,High,10,0
+SHP-01149,SUP-010,Raw material,0.656,20,4.56,14.3,Rail,2.2,3.02,Critical,Medium,19,1
+SHP-01150,SUP-038,Raw material,0.874,11,1.57,13.4,Air,4.6,1.99,Low,Medium,8,1
+SHP-01151,SUP-011,Electronic component,0.811,9,2.36,26.2,Road,3.3,1.75,Medium,Low,8,1
+SHP-01152,SUP-017,Chemical,0.903,24,0.84,4.6,Air,2.8,2.22,Low,Low,2,0
+SHP-01153,SUP-044,Chemical,0.936,13,1.6,8.9,Road,1.8,2.52,High,Low,4,1
+SHP-01154,SUP-004,Packaging,0.767,16,3.28,16.0,Air,2.5,4.37,Low,Low,6,0
+SHP-01155,SUP-027,Raw material,0.867,6,3.53,28.8,Air,3.5,6.26,Medium,Medium,1,0
+SHP-01156,SUP-036,Chemical,0.999,32,3.21,15.0,Road,4.3,0.33,High,Low,2,0
+SHP-01157,SUP-008,Electronic component,0.882,17,3.36,21.3,Rail,3.1,3.04,High,Medium,7,1
+SHP-01158,SUP-018,Raw material,0.943,17,1.01,18.2,Sea,2.3,1.78,Low,Low,3,0
+SHP-01159,SUP-021,Electronic component,0.883,29,1.25,28.4,Rail,5.9,0.81,Low,Low,4,0
+SHP-01160,SUP-040,Electronic component,0.939,21,3.45,5.3,Road,5.5,1.43,Medium,High,10,0
+SHP-01161,SUP-059,Raw material,0.623,4,2.75,23.9,Rail,1.7,4.86,Medium,Medium,2,0
+SHP-01162,SUP-051,Chemical,0.856,34,8.22,16.4,Road,7.4,3.43,Medium,High,5,1
+SHP-01163,SUP-012,Chemical,0.657,13,3.17,25.4,Air,1.4,3.77,High,Medium,2,0
+SHP-01164,SUP-002,Chemical,0.659,33,6.69,11.4,Rail,3.2,2.73,Medium,Low,3,0
+SHP-01165,SUP-004,Raw material,0.825,13,2.15,18.2,Road,2.6,5.51,High,Medium,4,0
+SHP-01166,SUP-036,Chemical,0.999,12,2.76,17.2,Rail,1.8,0.72,Medium,Medium,2,0
+SHP-01167,SUP-010,Packaging,0.671,20,2.75,10.0,Air,0.5,3.03,Medium,Low,5,1
+SHP-01168,SUP-014,Raw material,0.772,43,3.33,7.8,Sea,1.0,2.73,Low,High,1,1
+SHP-01169,SUP-051,Packaging,0.83,28,1.37,13.4,Road,4.0,2.62,Medium,Medium,6,0
+SHP-01170,SUP-053,Electronic component,0.626,21,4.86,19.0,Road,4.9,9.71,Low,Medium,0,0
+SHP-01171,SUP-051,Electronic component,0.801,20,1.83,11.9,Rail,4.2,6.28,Medium,Medium,12,1
+SHP-01172,SUP-016,Raw material,0.663,17,2.88,15.4,Road,1.1,4.33,Critical,Medium,5,0
+SHP-01173,SUP-038,Packaging,0.889,32,1.87,2.9,Rail,4.1,2.43,High,Low,6,1
+SHP-01174,SUP-037,Raw material,0.823,24,2.58,15.0,Road,1.2,2.75,Medium,High,5,1
+SHP-01175,SUP-012,Raw material,0.695,7,4.74,26.2,Road,2.5,4.66,High,Low,6,0
+SHP-01176,SUP-034,Raw material,0.912,9,3.01,23.6,Air,2.0,4.49,High,Low,3,0
+SHP-01177,SUP-032,Spare part,0.715,22,3.9,17.3,Road,1.5,2.13,High,Low,4,1
+SHP-01178,SUP-024,Electronic component,0.975,9,3.67,19.9,Air,4.0,5.75,Medium,Medium,3,0
+SHP-01179,SUP-046,Electronic component,0.917,17,2.92,11.4,Road,4.5,2.97,Medium,High,4,0
+SHP-01180,SUP-041,Electronic component,0.494,25,6.02,31.0,Rail,1.9,3.74,Medium,High,4,0
+SHP-01181,SUP-032,Spare part,0.704,20,2.59,34.5,Road,2.1,3.17,Low,Medium,3,0
+SHP-01182,SUP-044,Packaging,0.942,8,4.12,19.3,Sea,3.6,2.94,Medium,High,16,1
+SHP-01183,SUP-046,Spare part,0.92,10,3.93,38.7,Sea,0.1,3.15,Critical,Medium,6,0
+SHP-01184,SUP-035,Electronic component,0.593,21,4.83,12.6,Road,3.6,2.85,Critical,Low,5,1
+SHP-01185,SUP-017,Raw material,0.868,41,4.19,8.0,Air,3.6,2.47,Low,Medium,8,1
+SHP-01186,SUP-046,Packaging,0.986,15,1.71,12.3,Road,2.9,2.27,Medium,Low,4,1
+SHP-01187,SUP-044,Electronic component,0.912,25,6.06,16.2,Rail,3.8,4.53,Medium,Low,9,0
+SHP-01188,SUP-060,Chemical,0.952,20,2.16,36.5,Road,2.7,4.63,Medium,Low,0,0
+SHP-01189,SUP-009,Spare part,0.877,11,2.43,15.8,Rail,3.4,1.24,High,Low,19,1
+SHP-01190,SUP-026,Electronic component,0.851,25,3.39,11.1,Road,1.5,2.69,Low,High,4,0
+SHP-01191,SUP-056,Spare part,0.789,6,7.79,10.8,Sea,1.0,2.21,Critical,High,9,1
+SHP-01192,SUP-031,Packaging,0.764,24,2.61,27.1,Rail,2.9,3.79,Critical,Low,3,0
+SHP-01193,SUP-057,Raw material,0.817,21,3.5,26.0,Rail,3.5,8.49,High,Medium,1,0
+SHP-01194,SUP-001,Electronic component,0.712,12,3.05,14.1,Road,5.4,5.21,High,Low,5,0
+SHP-01195,SUP-003,Raw material,0.754,9,3.29,3.0,Road,6.0,4.01,High,Low,12,1
+SHP-01196,SUP-048,Chemical,0.492,13,4.24,9.0,Road,1.9,5.88,Medium,Low,9,0
+SHP-01197,SUP-022,Raw material,0.765,11,4.07,31.8,Sea,0.8,6.21,Low,Low,9,0
+SHP-01198,SUP-032,Electronic component,0.763,14,3.35,23.5,Sea,4.7,4.72,High,Low,3,0
+SHP-01199,SUP-026,Packaging,0.865,13,4.15,18.5,Road,1.4,1.41,Low,Low,0,0
+SHP-01200,SUP-025,Raw material,0.67,12,6.25,33.0,Air,2.0,7.56,High,Low,6,0
