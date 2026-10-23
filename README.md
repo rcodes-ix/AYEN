@@ -823,6 +823,4 @@ Before submitting changes:
 
 ## License
 
-No license is specified in this repository by this README.
-
-Before distributing or reusing the project, add a `LICENSE` file that explicitly states the terms under which the code may be used, modified, and redistributed.
+MIT Licensed.
