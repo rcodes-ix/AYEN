@@ -30,7 +30,6 @@ AYEN is currently a minimum viable product (MVP) intended for demonstration, exp
 * [Troubleshooting](#troubleshooting)
 * [Limitations and Security Considerations](#limitations-and-security-considerations)
 * [Future Development](#future-development)
-* [Contributing](#contributing)
 * [License](#license)
 
 ## Overview
@@ -809,19 +808,6 @@ Potential improvements include:
 * Deployment automation and repeatable testing.
 
 These are potential future directions, not claims that the current version already implements them.
-
-## Contributing
-
-Contributions that improve reliability, usability, data validation, testing, documentation, or model evaluation are welcome.
-
-Before submitting changes:
-
-1. Create a separate branch for your work.
-2. Keep changes focused and document important design decisions.
-3. Test modified Python files for syntax errors.
-4. Test the affected application workflows.
-5. Do not commit confidential manufacturer histories or sensitive data.
-6. Do not present synthetic data or synthetic-data metrics as real-world evidence.
 
 ## License
 
