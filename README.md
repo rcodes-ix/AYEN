@@ -16,36 +16,6 @@ AYEN is currently a **minimum viable product (MVP)** intended for demonstration,
 
 ## Table of Contents
 
-<<<<<<< HEAD
-
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Ethiopian Corridor Intelligence](#ethiopian-corridor-intelligence)
-- [How AYEN Works](#how-ayen-works)
-- [Application Pages](#application-pages)
-- [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [General Model Training](#general-model-training)
-- [Manufacturer-Specific Models](#manufacturer-specific-models)
-- [Using the Demonstration Dataset](#using-the-demonstration-dataset)
-- [Dataset Schemas](#dataset-schemas)
-- [Prediction Explanations](#prediction-explanations)
-- [Model Evaluation](#model-evaluation)
-- [Risk Interpretation](#risk-interpretation)
-- [Data Storage](#data-storage)
-- [Configuration and Customization](#configuration-and-customization)
-- [Troubleshooting](#troubleshooting)
-- [Limitations and Security Considerations](#limitations-and-security-considerations)
-- [Future Development](#future-development)
-- [License](#license)
-
----
-
-=======
-
 - [Overview](#overview)
 - [Key Features](#key-features)
 - [How AYEN Works](#how-ayen-works)
@@ -67,7 +37,6 @@ AYEN is currently a **minimum viable product (MVP)** intended for demonstration,
 - [Limitations and Security Considerations](#limitations-and-security-considerations)
 - [Future Development](#future-development)
 - [License](#license)
-  > > > > > > > f5a518eed0bbd0abe8c40ff10e8e57c89d2f4d28
 
 ## Overview
 
